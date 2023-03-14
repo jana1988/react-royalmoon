@@ -1,0 +1,394 @@
+.withdraw {
+  width: 783rpx;
+  min-height: 1081rpx;
+  background: #211d3b 0% 0% no-repeat padding-box;
+  box-shadow: 0rpx 10rpx 40rpx #00000029;
+  border-radius: 0rpx 8rpx 8rpx 8rpx;
+  padding: 25rpx 48rpx;
+  box-sizing: border-box;
+}
+.title {
+  font-family: "Omnes Italic Bold";
+  font-size: 32rpx;
+  color: #fa6e42;
+}
+.subtitle {
+  color: #f5f5f5;
+  font-family: "Gen Jyuu Gothic Bold";
+  font-size: 18rpx;
+  margin-top: 31rpx;
+}
+.banks {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 12rpx;
+  .bank {
+    width: 217rpx;
+    height: 98rpx;
+    background: blue;
+    margin-right: 18rpx;
+    margin-top: 16rpx;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+  }
+}
+.amount {
+  display: flex;
+  justify-content: space-between;
+  margin: 28rpx 0;
+  .left {
+    color: #f5f5f5;
+    font-size: 18rpx;
+    font-family: "Gen Jyuu Gothic Bold";
+    display: flex;
+    height: 22rpx;
+    align-items: center;
+    svg {
+      fill: #3e3e65;
+      width: 20rpx;
+      height: 22rpx;
+      margin-left: 10rpx;
+      cursor: pointer;
+    }
+  }
+  .right {
+    letter-spacing: 0rpx;
+    font-family: "Gen Jyuu Gothic Bold";
+    font-size: 18rpx;
+    color: #fa6e42;
+    position: relative;
+  }
+}
+.withdraw {
+  .form {
+    .item input {
+      background: #2b2847 0% 0% no-repeat padding-box;
+      border: none;
+      margin-bottom: 16rpx;
+      margin-top: 8rpx;
+      width: 687rpx;
+      height: 42rpx;
+      color: #f5f5f5;
+      font-size: 16rpx;
+      &::placeholder {
+        color: #6c698d;
+        font-family: "Gen Jyuu Gothic Medium";
+        font-size: 16rpx;
+      }
+    }
+    .alertMessage {
+      color: #6c698d;
+      font-size: 16rpx;
+      font-family: "Gen Jyuu Gothic Normal";
+      margin-top: -8rpx;
+      margin-bottom: 16rpx;
+      color: red;
+    }
+    .label {
+      font-size: 16rpx;
+      font-family: "Gen Jyuu Gothic Bold";
+      color: #f5f5f5;
+    }
+    .selectButton {
+      background: #2b2847 0% 0% no-repeat padding-box;
+      margin-right: 16rpx;
+      width: 687rpx;
+      margin-top: 8rpx;
+      margin-bottom: 16rpx;
+    }
+    .search {
+      width: 647rpx;
+      // height: 42rpx;
+      margin: 0 auto;
+      position: relative;
+      margin-top: 15rpx;
+      input {
+        margin-bottom: 0rpx;
+        width: 647rpx;
+        height: 42rpx;
+        border: 1rpx solid #f5f5f5;
+        border-radius: 8rpx;
+        text-align: center;
+        font-family: "Gen Jyuu Gothic Medium";
+        color: #f5f5f5;
+        font-size: 16rpx;
+        &::placeholder {
+          color: #6c698d;
+          font-family: "Gen Jyuu Gothic Medium";
+          font-size: 16rpx;
+        }
+      }
+      svg {
+        width: 13rpx;
+        height: 13rpx;
+        position: absolute;
+        top: 0rpx;
+        right: 21rpx;
+        bottom: 0;
+        margin: auto 0;
+        cursor: pointer;
+        fill: #6c698d;
+      }
+    }
+    .select_content {
+      height: 100%;
+      overflow: auto;
+      .empty {
+        margin-top: 20rpx;
+      }
+      .radio {
+        width: 647rpx;
+        box-sizing: border-box;
+        justify-content: center;
+      }
+    }
+    .transfer {
+      margin-top: 30rpx;
+      .title {
+        color: #f5f5f5;
+        font-family: "Gen Jyuu Gothic Bold";
+        font-size: 18rpx;
+      }
+      .content {
+        margin-top: 16rpx;
+        .text {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 8rpx;
+          &:first-child {
+            margin-top: 0;
+          }
+          .left {
+            color: #6c698d;
+            font-size: 16rpx;
+            font-family: "Gen Jyuu Gothic Bold";
+          }
+          .right {
+            position: relative;
+            color: #fa6e42;
+            font-family: "Gen Jyuu Gothic Medium";
+            font-size: 16rpx;
+          }
+        }
+      }
+    }
+    .loading {
+      position: relative;
+      margin-top: 45rpx;
+    }
+    .button {
+      width: 687rpx;
+      height: 42rpx;
+      margin-top: 28rpx;
+    }
+  }
+}
+
+.help_modal {
+  .help_modal_wrap {
+    &:not(:first-child) {
+      margin-top: 27rpx;
+    }
+    .question {
+      color: #f5f5f5;
+      font-family: "Gen Jyuu Gothic Bold";
+      font-size: 16rpx;
+    }
+    .answer {
+      color: #b8b6c9;
+      font-family: "Gen Jyuu Gothic Medium";
+      font-size: 16rpx;
+      margin-left: 10rpx;
+      margin-top: 8rpx;
+    }
+  }
+}
+.help_button,
+.kyc_button {
+  width: 100%;
+}
+.kyc_modal {
+  color: #f5f5f5;
+  font-family: "Gen Jyuu Gothic Bold";
+  font-size: 16rpx;
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 751px) {
+  .kyc_modal {
+    width: 600rpx;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .withdraw {
+    width: 100%;
+    min-height: 500rpx * @mb;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0 16.5rpx * @mb;
+  }
+
+  .banks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 12rpx * @mb;
+    .bank {
+      width: 108rpx * @mb;
+      height: 49rpx * @mb;
+      margin-right: 9rpx * @mb;
+      margin-top: 8rpx * @mb;
+      border-radius: 8rpx * @mb;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+  }
+  .amount {
+    margin-top: 16rpx * @mb;
+    .left {
+      font-size: 14rpx * @mb;
+      height: 18rpx * @mb;
+
+      svg {
+        width: 16rpx * @mb;
+        height: 18rpx * @mb;
+        margin-left: 10rpx * @mb;
+      }
+    }
+    .right {
+      font-size: 14rpx * @mb;
+    }
+  }
+  .withdraw {
+    .form {
+      margin-top: 28rpx * @mb;
+      .item {
+        margin-top: 16rpx * @mb;
+        .label {
+          font-size: 14rpx * @mb;
+        }
+        input {
+          border: none;
+          margin-top: 10rpx * @mb;
+          width: 343rpx * @mb;
+          height: 42rpx * @mb;
+          padding-left: 13rpx * @mb;
+          font-size: 12rpx * @mb;
+          &::placeholder {
+            font-size: 12rpx * @mb;
+          }
+        }
+      }
+      .alertMessage {
+        color: #fa6e42;
+        vertical-align: text-top;
+        font-size: 14rpx * @mb;
+        line-height: 20rpx * @mb;
+      }
+      .bankName {
+        margin-top: 16rpx * @mb;
+
+        .label {
+          font-size: 14rpx * @mb;
+        }
+
+        .selectButton {
+          width: 343rpx * @mb;
+          height: 42rpx * @mb;
+          margin-top: 10rpx * @mb;
+          margin-bottom: 8rpx * @mb;
+        }
+        .search {
+          width: 316rpx * @mb;
+          // height: 42rpx * @mb;
+          margin-top: 15rpx * @mb;
+          input {
+            width: 316rpx * @mb;
+            height: 42rpx * @mb;
+            border: 1rpx * @mb solid #f5f5f5;
+            border-radius: 8rpx * @mb;
+            font-size: 16rpx * @mb;
+            box-sizing: border-box;
+            &::placeholder {
+              font-size: 16rpx * @mb;
+            }
+          }
+          svg {
+            width: 13rpx * @mb;
+            height: 13rpx * @mb;
+            right: 21rpx * @mb;
+            top: 10rpx * @mb;
+          }
+        }
+
+        .radio {
+          width: unset;
+        }
+        .select_content {
+          .empty {
+            margin-top: 30rpx * @mb;
+          }
+        }
+      }
+
+      .transfer {
+        margin-top: 22rpx * @mb;
+        .title {
+          font-size: 14rpx * @mb;
+        }
+        .content {
+          margin-top: 13rpx * @mb;
+
+          .text {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8rpx * @mb;
+            &:first-child {
+              margin-top: 0;
+            }
+            .left {
+              font-size: 14rpx * @mb;
+            }
+            .right {
+              font-size: 14rpx * @mb;
+            }
+          }
+        }
+      }
+      .button {
+        width: 100%;
+        height: 48rpx * @mb;
+        margin-top: 47rpx;
+      }
+    }
+  }
+
+  .help_modal {
+    .help_modal_wrap {
+      &:not(:first-child) {
+        margin-top: 10rpx * @mb;
+      }
+      .question {
+        color: #f5f5f5;
+        font-size: 14rpx * @mb;
+        line-height: 1.5;
+      }
+      .answer {
+        color: #b8b6c9;
+        line-height: 1.5;
+        margin-left: 10rpx * @mb;
+        margin-top: 5rpx * @mb;
+        font-size: 14rpx * @mb;
+      }
+    }
+  }
+  .help_button {
+    width: 100%;
+  }
+  .kyc_modal {
+    font-size: 12rpx * @mb;
+  }
+}

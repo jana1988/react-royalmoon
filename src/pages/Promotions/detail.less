@@ -1,0 +1,137 @@
+.container {
+  margin: 0 auto;
+  width: 1601rpx;
+  min-height: 70vh;
+  .detail {
+    background: #211d3b 0% 0% no-repeat padding-box;
+    box-shadow: 0rpx 10rpx 40rpx #00000029;
+    border-radius: 8rpx;
+    padding-bottom: 60rpx;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .pic {
+      width: 100%;
+    }
+    .title {
+      color: #f5f5f5;
+      margin: 30rpx 53rpx;
+      font-family: "Omnes Italic Bold";
+      font-size: 32rpx;
+      line-height: 40rpx;
+    }
+    .detail_desc {
+      font-family: "Gen Jyuu Gothic Medium";
+      color: #f5f5f5;
+      padding: 0 53rpx 60rpx;
+      font-size: 18rpx;
+      line-height: 40rpx;
+      align-self: start;
+      width: 100%;
+      word-break: break-all;
+      box-sizing: border-box;
+      h1,
+      h2,
+      h3,
+      p,
+      blockquote,
+      ol,
+      li,
+      strong,
+      em,
+      u,
+      s,
+      a {
+        color: #f5f5f5;
+        line-height: 2;
+        font-size: 18rpx;
+      }
+      h1 {
+        font-size: 32rpx;
+      }
+      h2 {
+        font-size: 24rpx;
+      }
+      h3 {
+        font-size: 19rpx;
+      }
+      h4 {
+        font-size: 16rpx;
+      }
+      h5 {
+        font-size: 13rpx;
+      }
+      h6 {
+        font-size: 12rpx;
+      }
+    }
+    .btn {
+      width: 213rpx;
+      height: 42rpx;
+      cursor: pointer;
+      font-size: 16rpx;
+      font-weight: bold;
+    }
+  }
+}
+
+.empty {
+  width: 100%;
+  height: 80vh;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 100%;
+    .detail {
+      .title {
+        margin: 13rpx * @mb 16rpx * @mb;
+        font-size: 16rpx * @mb;
+        line-height: 20rpx * @mb;
+        color: #fa6e42;
+      }
+      .detail_desc {
+        padding: 0 16rpx * @mb 20rpx * @mb;
+        font-size: 14rpx * @mb;
+        line-height: 20rpx * @mb;
+        h1,
+        h2,
+        h3,
+        p,
+        blockquote,
+        ol,
+        li,
+        strong,
+        em,
+        u,
+        s,
+        a {
+          font-size: 14rpx * @mb;
+        }
+        h1 {
+          font-size: 32rpx * @mb;
+        }
+        h2 {
+          font-size: 24rpx * @mb;
+        }
+        h3 {
+          font-size: 19rpx * @mb;
+        }
+        h4 {
+          font-size: 16rpx * @mb;
+        }
+        h5 {
+          font-size: 13rpx * @mb;
+        }
+        h6 {
+          font-size: 12rpx * @mb;
+        }
+      }
+      .btn {
+        width: 180rpx * @mb;
+        height: 32rpx * @mb;
+        font-size: 14rpx * @mb;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+.game2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .text {
+    position: relative;
+    font-size: 46rpx;
+    color: #fff6f7;
+    // font-family: "Black Han Sans Regular";
+    font-family: "Omnes Italic Bold";
+
+    &::before {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 100%;
+      color: #77709b;
+      overflow: hidden;
+      animation: animate 2s linear infinite;
+      // font-family: "Black Han Sans Regular";
+      font-family: "Omnes Italic Bold";
+    }
+  }
+}
+
+@keyframes animate {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .game2 {
+    .text {
+      font-size: 28rpx * @mb;
+    }
+  }
+}

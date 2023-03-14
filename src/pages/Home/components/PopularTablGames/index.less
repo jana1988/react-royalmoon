@@ -1,0 +1,94 @@
+.popularTablGames {
+  margin-top: 96rpx;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .box {
+      width: 1664rpx;
+      margin-top: 52rpx;
+      position: relative;
+      background: transparent
+        linear-gradient(
+          103deg,
+          #2d2657 0%,
+          #1d1b42 27%,
+          #38295e 52%,
+          #222047 77%,
+          #39325b 100%
+        )
+        0% 0% no-repeat padding-box;
+      box-shadow: 0rpx 10rpx 40rpx #00000029;
+      border: 3rpx solid #342f64;
+      border-radius: 20rpx;
+      padding-top: 70rpx;
+      padding-bottom: 28rpx;
+      box-sizing: border-box;
+      .swiperWarpper {
+        :global {
+          .swiper {
+            margin-left: 32rpx;
+            margin-right: 18rpx;
+            .swiper-slide {
+              width: 250rpx;
+              height: 209rpx;
+              margin-right: 18rpx;
+            }
+          }
+        }
+        .card {
+          width: 250rpx;
+          :global {
+            ._card_src {
+              height: 209rpx;
+              // .img_border();
+            }
+          }
+        }
+        .navigation {
+          padding: 0 5rpx;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .popularTablGames {
+    margin-top: 36rpx * @mb;
+    .content {
+      .box {
+        margin-top: 17rpx * @mb;
+        width: 100%;
+        box-sizing: border-box;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        .swiperWarpper {
+          :global {
+            .swiper {
+              margin-left: 16rpx * @mb;
+              margin-right: 10rpx * @mb;
+              .swiper-slide {
+                width: 106rpx * @mb;
+                height: 80rpx * @mb;
+                margin-right: 12rpx * @mb;
+              }
+            }
+          }
+          .card {
+            width: 106rpx * @mb;
+
+            :global {
+              ._card_src {
+                height: 80rpx * @mb;
+                // .img_border_mb();
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

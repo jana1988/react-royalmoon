@@ -1,0 +1,186 @@
+.tab-content {
+  background-color: #211d3b;
+  padding: 15rpx * @mb;
+  box-sizing: border-box;
+  min-height: 500rpx * @mb;
+}
+.form-wrap {
+  // margin-bottom: 14rpx * @mb;
+  display: flex;
+}
+.items-content {
+  padding: 14rpx * @mb 0;
+  position: relative;
+}
+.form-select {
+  font-size: 10rpx * @mb;
+  border-radius: 8rpx * @mb;
+  border: 1rpx * @mb solid #2b2847;
+  width: 76rpx * @mb;
+  height: 32rpx * @mb;
+  margin-right: 8rpx * @mb;
+  font-family: Gen Jyuu Gothic Medium;
+  background: #1817204d 0% 0% no-repeat padding-box;
+  text-align: center;
+  color: #f5f5f5;
+  box-sizing: border-box;
+  &::-webkit-input-placeholder {
+    color: #6c698d;
+  }
+  &:-moz-placeholder {
+    color: #6c698d;
+  }
+  &::-moz-placeholder {
+    color: #6c698d;
+  }
+  &:-ms-input-placeholder {
+    color: #6c698d;
+  }
+}
+.form-submit {
+  border-radius: 8rpx * @mb;
+  font-size: 10rpx * @mb;
+  width: 76rpx * @mb;
+  height: 32rpx * @mb;
+  float: right;
+  background: #2b2847 0% 0% no-repeat padding-box;
+  font-family: "Gen Jyuu Gothic Bold";
+}
+.pagination-wrap {
+  text-align: center;
+  margin-top: 4rpx * @mb;
+}
+.history-item {
+  background-color: #2b2847;
+  border-radius: 8rpx * @mb;
+  box-sizing: border-box;
+  padding: 16rpx * @mb 20rpx * @mb;
+  margin-bottom: 10rpx * @mb;
+}
+.history-item-row {
+  display: flex;
+  align-items: center;
+  &:not(:first-child) {
+    margin-top: 10rpx * @mb;
+  }
+}
+.history-item-col:nth-child(1) {
+  flex: 1;
+}
+.history-item-number {
+  font-family: Gen Jyuu Gothic Medium;
+  font-size: 14rpx * @mb;
+  color: #6c698d;
+  svg {
+    transform: rotate(-90deg);
+    fill: #6c698d;
+    width: 13rpx * @mb;
+    height: 13rpx * @mb;
+  }
+}
+.history-item-status {
+  font-family: Gen Jyuu Gothic Medium;
+  font-size: 14rpx * @mb;
+  color: #6c698d;
+}
+.history-item-value {
+  font-family: Gen Jyuu Gothic Heavy;
+  font-size: 18rpx * @mb;
+  color: #f5f5f5;
+}
+.reward-content {
+  margin-top: 13rpx * @mb;
+  margin-bottom: 15rpx * @mb;
+}
+.reward-row {
+  background: #2b2847 0% 0% no-repeat padding-box;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  border-radius: 8rpx * @mb;
+  flex-direction: column;
+  padding: 16rpx * @mb 20rpx * @mb;
+  margin-bottom: 8rpx * @mb;
+}
+.betting-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.betting-gameName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 165rpx * @mb;
+  font-family: "Gen Jyuu Gothic Medium";
+  font-size: 14rpx * @mb;
+  line-height: 20rpx * @mb;
+  color: #6c698d;
+}
+.betting-status {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 92rpx * @mb;
+  font-family: "Gen Jyuu Gothic Medium";
+  font-size: 14rpx * @mb;
+  line-height: 20rpx * @mb;
+  color: #fa6e42;
+  text-align: right;
+}
+.reward-col-item {
+  display: flex;
+  align-items: center;
+  &:not(:last-child) {
+    margin-bottom: 8rpx * @mb;
+  }
+}
+.reward-col-label,
+.reward-col-value {
+  font-family: Gen Jyuu Gothic Medium;
+  font-size: 14rpx * @mb;
+}
+.reward-col-label {
+  flex: 1;
+  color: #6c698d;
+}
+.reward-col-value {
+  color: #f5f5f5;
+}
+.no-data {
+  color: #6c698d;
+  font-size: 14rpx * @mb;
+  padding: 20rpx * @mb;
+  text-align: center;
+}
+.balance-history-item {
+  .history-item-col:nth-child(1) {
+    flex: none;
+  }
+  .history-item-col:nth-child(2) {
+    flex: 1;
+    text-align: center;
+    .history-item-number {
+      color: #fa6e42;
+    }
+  }
+}
+
+.empty {
+  height: 280rpx * @mb;
+}
+
+.selectBtn {
+  font-size: 10rpx * @mb;
+  line-height: 15rpx * @mb;
+  border-radius: 8rpx * @mb;
+  border: 1rpx * @mb solid #2b2847;
+  width: 120rpx * @mb;
+  height: 32rpx * @mb;
+  margin-right: 8rpx * @mb;
+  background: #1817204d;
+  color: #6c698d;
+}
+.radio_item {
+  width: 180rpx * @mb;
+}

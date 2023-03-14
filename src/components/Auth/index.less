@@ -1,0 +1,117 @@
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: 33rpx;
+  .text_en {
+    color: #6c698d;
+    font-size: 32rpx;
+    cursor: pointer;
+    color: #6c698d;
+    font-family: "Omnes Italic Bold";
+    &:first-child {
+      margin-right: 41rpx;
+    }
+  }
+  .text_ja {
+    color: #6c698d;
+    font-size: 22rpx;
+    cursor: pointer;
+    color: #6c698d;
+    font-family: "Mochiy Pop One Regular";
+    &:first-child {
+      margin-right: 41rpx;
+    }
+  }
+  .active {
+    color: #fa6e42;
+  }
+}
+
+.forgotPasswordModal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 612rpx;
+  box-sizing: border-box;
+  padding: 0 12rpx;
+  .desc {
+    color: #f5f5f5;
+    font-size: 16rpx;
+    line-height: 20rpx;
+    width: 100%;
+    font-family: "Gen Jyuu Gothic Medium";
+    letter-spacing: 0.82rpx;
+  }
+  .true {
+    color: #fa6e42;
+    font-size: 16rpx;
+    line-height: 20rpx;
+    width: 100%;
+    font-family: "Gen Jyuu Gothic Medium";
+    letter-spacing: 0.82rpx;
+  }
+  input {
+    margin-top: 16rpx;
+    width: 100%;
+    height: 42rpx;
+    border: 1rpx solid #f5f5f5;
+    border-radius: 8rpx;
+    margin-top: 8rpx;
+    padding-left: 22rpx;
+    box-sizing: border-box;
+  }
+  .confirmBtn {
+    width: 100%;
+    margin-top: 32rpx;
+  }
+}
+
+@media (max-width: 750px) {
+  .title {
+    margin-top: 32rpx * @mb;
+    .text_en {
+      font-size: 22rpx * @mb;
+      &:first-child {
+        margin-right: 24rpx * @mb;
+      }
+    }
+    .text_ja {
+      font-size: 22rpx * @mb;
+      &:first-child {
+        margin-right: 24rpx * @mb;
+      }
+    }
+    .active {
+      color: #fa6e42;
+    }
+  }
+  .forgotPasswordModal {
+    width: 100%;
+    .desc {
+      font-size: 14rpx * @mb;
+      line-height: 20rpx * @mb;
+      margin-top: 16rpx * @mb;
+      width: 100%;
+    }
+    .true {
+      font-size: 14rpx * @mb;
+      line-height: 20rpx * @mb;
+      margin-top: 16rpx * @mb;
+      width: 100%;
+    }
+    input {
+      margin-top: 12rpx * @mb;
+      width: 303rpx * @mb;
+      height: 42rpx * @mb;
+      border: 1rpx * @mb solid #f5f5f5;
+      border-radius: 8rpx * @mb;
+      padding-left: 20rpx * @mb;
+      box-sizing: border-box;
+    }
+    .confirmBtn {
+      width: 100%;
+      height: 32rpx * @mb;
+      margin-top: 16rpx * @mb;
+    }
+  }
+}

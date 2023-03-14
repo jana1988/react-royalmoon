@@ -1,0 +1,168 @@
+.jackpotSlots {
+  margin-top: 116rpx;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .box {
+      width: 1664rpx;
+      padding-top: 56rpx;
+      padding-bottom: 28rpx;
+      overflow: hidden;
+      box-sizing: border-box;
+      margin-top: 49rpx;
+      position: relative;
+      background-image: url("../../../../assets/home/jackpot_bg@2x.webp");
+      background-size: 100% 100%;
+      .img {
+        width: 750rpx;
+        height: 98rpx;
+        margin: 0 auto;
+      }
+      .amount {
+        font-family: "Gen Jyuu Gothic Heavy";
+        font-size: 90rpx;
+        color: #fa6e42;
+        text-align: center;
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        margin-top: 37rpx;
+      }
+      .swiperWarpper {
+        margin-top: 34rpx;
+        :global {
+          .swiper {
+            margin-left: 30rpx;
+            margin-right: 28rpx;
+            box-sizing: border-box;
+            .swiper-wrapper {
+              .swiper-slide {
+                width: 300rpx;
+                height: 225rpx;
+                margin-right: 25rpx;
+              }
+            }
+          }
+        }
+
+        .card {
+          position: relative;
+          :global {
+            ._card_src {
+              // .img_border();
+            }
+          }
+          svg {
+            width: 19rpx;
+            height: 19rpx;
+            fill: #f5f5f5;
+            margin-right: 5rpx;
+          }
+          .bg {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+          .num {
+            width: 300rpx;
+            height: 32rpx;
+            background: #211d3b;
+            border: 3rpx solid #fa6e42;
+            border-radius: 12rpx;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            bottom: 0rpx;
+
+            span {
+              font-family: "Gen Jyuu Gothic Bold";
+              font-size: 18rpx;
+              color: #f5f5f5;
+            }
+          }
+        }
+
+        .navigation {
+          padding: 0 7rpx;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .jackpotSlots {
+    margin-top: 39rpx * @mb;
+    width: 100%;
+    .content {
+      .box {
+        margin-top: 17rpx * @mb;
+        width: 100%;
+        position: relative;
+        padding-top: 27rpx * @mb;
+        padding-bottom: 11rpx * @mb;
+        .img {
+          width: 275rpx * @mb;
+          height: 36rpx * @mb;
+        }
+        .amount {
+          font-size: 32rpx * @mb;
+        }
+        .button {
+          margin-top: 14rpx * @mb;
+          .buttonWrap {
+            width: 94rpx * @mb;
+            height: 32rpx * @mb;
+          }
+        }
+        .swiperWarpper {
+          margin-top: 18rpx * @mb;
+          :global {
+            .swiper {
+              margin-left: 17rpx * @mb;
+              .swiper-slide {
+                width: 106rpx * @mb !important;
+                height: 80rpx * @mb !important;
+                margin-right: 12rpx * @mb !important;
+              }
+            }
+          }
+          .card {
+            width: 106rpx * @mb;
+            :global {
+              ._card_src {
+                // .img_border_mb();
+
+                height: 80rpx * @mb;
+                background-color: transparent;
+              }
+            }
+            svg {
+              width: 14rpx * @mb;
+              height: 14rpx * @mb;
+              fill: #f5f5f5 * @mb;
+              margin-right: 3rpx * @mb;
+            }
+
+            .num {
+              width: 106rpx * @mb;
+              height: 21rpx * @mb;
+              border: 1rpx * @mb solid #fa6e42;
+              border-radius: 10rpx * @mb;
+              bottom: 0;
+              span {
+                color: #f5f5f5;
+                font-size: 12rpx * @mb;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

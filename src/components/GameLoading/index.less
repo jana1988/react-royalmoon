@@ -1,0 +1,26 @@
+@media screen and (max-width: 750px) {
+  .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgb(246, 246, 246);
+    z-index: 99;
+    .loading {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .img {
+        width: 52rpx * @mb;
+        height: 52rpx * @mb;
+      }
+    }
+  }
+}

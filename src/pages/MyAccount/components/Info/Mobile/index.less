@@ -1,0 +1,98 @@
+.info-content {
+  display: flex;
+  padding: 10rpx * @mb 16rpx * @mb;
+  flex-direction: column;
+}
+.card {
+  width: 100%;
+  background: #211d3b 0% 0% no-repeat padding-box;
+  box-shadow: 0rpx 10rpx 40rpx #00000029;
+  border-radius: 8rpx;
+  padding: 11rpx * @mb 12rpx * @mb;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+}
+.wallet-card-left {
+  flex: 1;
+  .card-title {
+    margin-bottom: 12rpx * @mb;
+  }
+}
+.card-title {
+  font-family: Gen Jyuu Gothic Medium;
+  color: #6C698D;
+  font-size: 12rpx * @mb;
+}
+.card-number {
+  font-family: Gen Jyuu Gothic Bold;
+  font-size: 18rpx * @mb;
+  color: #F5F5F5;
+}
+.card-btn {
+  width: 74rpx * @mb;
+  height: 32rpx * @mb;
+  background: #44416B;
+  border: 2rpx * @mb solid #4EF692;
+  border-radius: 8rpx * @mb;
+  color: #4EF692;
+  font-family: Gen Jyuu Gothic Heavy;
+  font-size: 12rpx * @mb;
+  box-sizing: border-box;
+}
+.card-btn-primary {
+  background: transparent linear-gradient(275deg, #FA6242 0%, #F4933F 100%) 0% 0% no-repeat padding-box;
+  border: none;
+  color: #F5F5F5;
+  margin-left: 10rpx * @mb;
+}
+.bonus-wallet-card {
+  margin-top: 10rpx * @mb;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bonus-wallet-card-row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  &:not(:first-child) {
+    margin-top: 10rpx * @mb;
+  }
+}
+.bonus-wallet-card-col {
+  flex-shrink: 0;
+  &:nth-child(1) {
+    flex: 1;
+  }
+}
+.level-card {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 9rpx * @mb 12rpx * @mb;
+  margin-top: 10rpx * @mb;
+  > .card-title {
+    color: #FA6E42;
+  }
+}
+.level-card-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 4rpx * @mb;
+}
+.level-card-col {
+  flex-shrink: 0;
+  &:nth-child(1) {
+    flex: 1;
+  }
+  &:nth-child(2) {
+    > .card-title {
+      color: #F5F5F5;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .info-content {
+    display: flex;
+  }
+}

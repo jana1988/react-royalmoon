@@ -1,0 +1,255 @@
+.privateMessage {
+  display: flex;
+
+  .inboxList {
+    width: 389rpx;
+    height: 899rpx;
+    background-color: #211d3b;
+    box-shadow: 0px 10rpx 40rpx #00000029;
+    border-radius: 0px 8rpx 8rpx 8rpx;
+    display: flex;
+    flex-direction: column;
+
+    .header {
+      text-align: left;
+      font-size: 32rpx;
+      font-family: "Omnes Italic Bold";
+      letter-spacing: 0px;
+      color: #fa6e42;
+      padding-left: 48rpx;
+      padding-top: 31rpx;
+      padding-bottom: 18rpx;
+      border-bottom: 1rpx solid #2a254a;
+      display: flex;
+      align-items: center;
+      img {
+        width: 22rpx;
+        height: 17rpx;
+        margin-right: 12rpx;
+      }
+    }
+
+    ul {
+      flex: 1;
+      .notReaad {
+        div {
+          &::before {
+            position: absolute;
+            left: 13rpx;
+            top: 8rpx;
+            content: "";
+            width: 8rpx;
+            height: 8rpx;
+            background-color: #fa6e42;
+            border-radius: 50%;
+          }
+        }
+      }
+      li {
+        padding-top: 13rpx;
+        padding-bottom: 16rpx;
+        display: flex;
+        cursor: pointer;
+        border-bottom: 1rpx solid #2a254a;
+        height: 81rpx;
+        box-sizing: border-box;
+        margin-top: 16rpx;
+        div {
+          padding-left: 34rpx;
+          text-align: left;
+          font-family: "Gen Jyuu Gothic Medium";
+          line-height: 23rpx;
+          font-size: 16rpx;
+          color: #f5f5f5;
+          position: relative;
+          flex: 1;
+          width: 212rpx;
+
+          height: 68rpx;
+          word-break: break-all; // 允许单词内自动换行，如果一个单词很长的话
+          text-overflow: ellipsis; // 溢出用省略号显示
+          overflow: hidden; // 超出的文本隐藏
+          display: -webkit-box; // 作为弹性伸缩盒子模型显示
+          -webkit-line-clamp: 3; // 显示的行
+          -webkit-box-orient: vertical; // 设置伸缩盒子的子元素排列方式--从上到下垂直排列
+        }
+        span {
+          display: block;
+          margin-right: 20rpx;
+          margin-left: 27rpx;
+          text-align: left;
+          font-family: "Gen Jyuu Gothic Medium";
+          line-height: 23rpx;
+          font-size: 16rpx;
+          letter-spacing: 0px;
+          color: #6c698d;
+        }
+      }
+    }
+
+    .pageContainer {
+      margin-top: 50rpx;
+      justify-content: center;
+      display: flex;
+      margin-bottom: 15rpx;
+
+      .pageButton {
+        width: 79rpx;
+        height: 42rpx;
+        background: #2b2847;
+        border-radius: 8rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 10rpx;
+        color: #f5f5f5;
+        cursor: pointer;
+      }
+      .pageButton2 {
+        width: 10rpx;
+        height: 42rpx;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10rpx;
+        color: #f5f5f5;
+        cursor: pointer;
+      }
+      .page {
+        width: 52rpx;
+        height: 42rpx;
+        background: #fa6e42;
+        border-radius: 8rpx;
+        font-family: "Gen Jyuu Gothic Medium";
+        font-size: 16rpx;
+        line-height: 23rpx;
+        color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10rpx;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .inboxDetail {
+    width: 783rpx;
+    height: 899rpx;
+    background-color: #211d3b;
+    box-shadow: 0px 10rpx 40rpx #00000029;
+    border-radius: 0px 8rpx 8rpx 8rpx;
+    margin-left: 10rpx;
+    h6 {
+      margin: 28rpx 32rpx 26rpx;
+      font-family: "Gen Jyuu Gothic Bold";
+      font-size: 24rpx;
+      line-height: 36rpx;
+      letter-spacing: 0px;
+      color: #ffffff;
+      opacity: 1;
+    }
+    div {
+      text-align: left;
+      font-family: "Gen Jyuu Gothic Medium";
+      font-size: 16rpx;
+      line-height: 23rpx;
+      color: #ffffff;
+      margin: 0 32rpx;
+    }
+  }
+}
+
+.privateMessageMobile {
+  // position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  width: 100%;
+
+  .inboxListMobile {
+    background-color: #211d3b;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-bottom: 20rpx * @mb;
+    .wrap {
+      display: flex;
+      flex-direction: column;
+    }
+    ul {
+      flex: 1;
+      .notReaad {
+        div {
+          &::before {
+            position: absolute;
+            left: 16rpx * @mb;
+            top: 6rpx * @mb;
+            content: "";
+            width: 6rpx * @mb;
+            height: 6rpx * @mb;
+            background-color: #fa6e42;
+            border-radius: 50%;
+          }
+        }
+      }
+      li {
+        padding-top: 20rpx * @mb;
+        padding-bottom: 6rpx * @mb;
+        display: flex;
+        height: 88rpx * @mb;
+        box-sizing: border-box;
+        .item {
+          padding-left: 34rpx * @mb;
+          text-align: left;
+          font-family: "Gen Jyuu Gothic Medium";
+          // line-height: 20rpx * @mb;
+          position: relative;
+          flex: 1;
+          .subject {
+            color: #f5f5f5;
+            font-size: 14rpx * @mb;
+          }
+          .content {
+            line-height: 20rpx * @mb;
+            margin-top: 4rpx * @mb;
+            color: #f5f5f5;
+            font-size: 14rpx * @mb;
+            word-break: break-all; // 允许单词内自动换行，如果一个单词很长的话
+            text-overflow: ellipsis; // 溢出用省略号显示
+            overflow: hidden; // 超出的文本隐藏
+            display: -webkit-box; // 作为弹性伸缩盒子模型显示
+            -webkit-line-clamp: 2; // 显示的行
+            -webkit-box-orient: vertical; // 设置伸缩盒子的子元素排列方式--从上到下垂直排列
+          }
+
+          // word-break: break-all; // 允许单词内自动换行，如果一个单词很长的话
+          // text-overflow: ellipsis; // 溢出用省略号显示
+          // overflow: hidden; // 超出的文本隐藏
+          // display: -webkit-box; // 作为弹性伸缩盒子模型显示
+          // -webkit-line-clamp: 3; // 显示的行
+          // -webkit-box-orient: vertical; // 设置伸缩盒子的子元素排列方式--从上到下垂直排列
+        }
+        span {
+          display: block;
+          margin-right: 16rpx * @mb;
+          margin-left: 7rpx * @mb;
+          text-align: left;
+          font-family: "Gen Jyuu Gothic Medium";
+          line-height: 20rpx * @mb;
+          font-size: 14rpx * @mb;
+          color: #6c698d;
+        }
+      }
+    }
+  }
+}
+
+.contentMobile {
+  color: #ffffff;
+  padding-bottom: 30rpx * @mb;
+  font-family: "Gen Jyuu Gothic Medium";
+  font-size: 16rpx * @mb;
+  line-height: 23rpx * @mb;
+}

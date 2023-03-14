@@ -1,0 +1,50 @@
+.content {
+  display: flex;
+  text-align: left;
+  margin-top: 85rpx;
+  width: 100%;
+  .title {
+    letter-spacing: 0.52rpx;
+    color: #f5f5f5;
+    font-size: 26rpx;
+    font-family: "Omnes Italic Bold";
+  }
+  .sub {
+    line-height: 27rpx;
+    margin-top: 16rpx;
+    color: #fa6e42;
+    font-size: 18rpx;
+    font-family: "Gen Jyuu Gothic Medium";
+  }
+  svg {
+    fill: #f5f5f5;
+    height: auto;
+    width: 62rpx;
+    margin-right: 20rpx;
+  }
+}
+
+@media (max-width: 750px) {
+  .content {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    .title {
+      margin-top: 10rpx * @mb;
+      letter-spacing: 0.36rpx * @mb;
+      font-size: 18rpx * @mb;
+      line-height: 20rpx * @mb;
+    }
+    .sub {
+      margin-top: 7rpx * @mb;
+      line-height: 20rpx * @mb;
+      margin-left: 50rpx * @mb;
+      margin-right: 50rpx * @mb;
+      font-size: 14rpx * @mb;
+    }
+    svg {
+      width: 44rpx * @mb;
+      margin-top: 36rpx * @mb;
+    }
+  }
+}

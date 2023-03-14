@@ -1,0 +1,103 @@
+.deposit_withdraw {
+  display: flex;
+}
+
+.right {
+  margin-top: 48rpx;
+  width: 389rpx;
+  // height: 540rpx;
+  background: #211d3b 0% 0% no-repeat padding-box;
+  box-shadow: 0rpx 10rpx 40rpx #00000029;
+  border-radius: 8rpx;
+  margin-left: 16rpx;
+  padding: 25rpx 23rpx 44rpx 25rpx;
+  box-sizing: border-box;
+  .chat {
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: 160rpx;
+      height: 42rpx;
+      background: #3e3e65 0% 0% no-repeat padding-box;
+      border-radius: 8rpx;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #f5f5f5;
+      font-family: "Gen Jyuu Gothic Medium";
+      font-size: 16rpx;
+      cursor: pointer;
+    }
+  }
+  .question {
+    color: #f5f5f5;
+    font-size: 18rpx;
+    font-family: "Gen Jyuu Gothic Bold";
+    margin-top: 20rpx;
+  }
+  .anwer {
+    margin-top: 19rpx;
+    p {
+      color: #f5f5f5;
+      font-family: "Gen Jyuu Gothic Medium";
+      font-size: 16rpx;
+      line-height: 1.5;
+      margin-top: 20rpx;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .deposit_withdraw {
+    display: block;
+    background: #211d3b;
+    // padding: 0 16.5rpx * @mb;
+    box-sizing: border-box;
+  }
+
+  .right {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 0 16.5rpx * @mb;
+    padding-top: 38rpx * @mb;
+
+    .chat {
+      display: flex;
+      justify-content: space-between;
+      div {
+        width: 166rpx * @mb;
+        height: 32rpx * @mb;
+        border-radius: 8rpx * @mb;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #f5f5f5;
+        font-family: "Gen Jyuu Gothic Medium";
+        font-size: 14rpx * @mb;
+        svg {
+          fill: #fff;
+          width: 17rpx * @mb;
+          height: 16rpx * @mb;
+          margin-right: 11rpx * @mb;
+        }
+      }
+    }
+    .question {
+      color: #f5f5f5;
+      font-size: 14rpx * @mb;
+      margin-top: 18rpx * @mb;
+    }
+    .anwer {
+      margin-top: 19rpx;
+      p {
+        color: #f5f5f5;
+        font-size: 14rpx * @mb;
+        line-height: 1.5;
+        margin-top: 20rpx * @mb;
+      }
+    }
+  }
+}

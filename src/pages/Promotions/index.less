@@ -1,0 +1,180 @@
+.container {
+  margin: 0 auto;
+  width: 1601rpx;
+  min-height: 70vh;
+  .loading {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .header {
+    padding: 23rpx 0;
+    display: flex;
+    align-items: center;
+    img {
+      width: 22rpx;
+      height: 22rpx;
+    }
+    .tip_en {
+      font-family: "Omnes Italic Bold";
+      font-size: 32rpx;
+      color: #fa6e42;
+      margin-left: 10rpx;
+    }
+    .tip_ja {
+      font-family: "Mochiy Pop One Regular";
+      font-size: 22rpx;
+      color: #fa6e42;
+      margin-left: 10rpx;
+    }
+  }
+  .content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 37rpx;
+    .item {
+      background: transparent
+        linear-gradient(
+          360deg,
+          #393563 0%,
+          #2b284a 30%,
+          #2b284a 59%,
+          #28274b 100%
+        )
+        0% 0% no-repeat padding-box;
+      box-shadow: 0rpx 10rpx 40rpx #00000029;
+      border-radius: 8rpx;
+      overflow: hidden;
+      padding-bottom: 90rpx;
+      width: 509rpx;
+      position: relative;
+      .pic {
+        width: 100%;
+        height: 201rpx;
+        background-color: #6c698d;
+      }
+      .title {
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        display: -moz-box;
+        -moz-line-clamp: 2;
+        -moz-box-orient: vertical;
+        overflow-wrap: break-word;
+        word-break: break-all;
+        white-space: normal;
+        overflow: hidden;
+        font-size: 20rpx;
+        line-height: 30rpx;
+        font-family: "Gen Jyuu Gothic Bold";
+        letter-spacing: 0.66rpx;
+        color: #f5f5f5;
+        margin: 20rpx 32rpx 0;
+        max-height: 60rpx;
+      }
+      .subTitle {
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        display: -moz-box;
+        -moz-line-clamp: 3;
+        -moz-box-orient: vertical;
+        overflow-wrap: break-word;
+        word-break: break-all;
+        white-space: normal;
+        overflow: hidden;
+        font-family: "Gen Jyuu Gothic Medium";
+        font-size: 16rpx;
+        line-height: 26rpx;
+        color: #6c698d;
+        margin: 7rpx 32rpx 0;
+        max-height: 80rpx;
+        p {
+          color: #6c698d;
+          font-size: 16rpx;
+        }
+      }
+      .btn {
+        position: absolute;
+        bottom: 27rpx;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 152rpx;
+        height: 42rpx;
+        font-size: 16rpx;
+      }
+    }
+  }
+}
+
+.empty {
+  width: 100%;
+  height: 80vh;
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 100%;
+    // padding-bottom: 0;
+    .header {
+      padding: 30rpx * @mb 0;
+      margin-left: 16rpx * @mb;
+      img {
+        width: 22rpx * @mb;
+        height: 22rpx * @mb;
+      }
+      .tip_en {
+        font-size: 26rpx * @mb;
+        margin-left: 10rpx * @mb;
+      }
+      .tip_ja {
+        font-size: 26rpx * @mb;
+        margin-left: 10rpx * @mb;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+
+      .item {
+        margin: 0 16rpx * @mb 19rpx * @mb;
+        border-radius: 8rpx * @mb;
+        overflow: hidden;
+        width: 343rpx * @mb;
+        padding-bottom: 90rpx * @mb;
+
+        .pic {
+          width: 100%;
+          height: 136rpx * @mb;
+          background: none;
+        }
+        .title {
+          margin: 15rpx * @mb 14rpx * @mb 0;
+          font-size: 14rpx * @mb;
+          line-height: 20rpx * @mb;
+          max-height: 60rpx * @mb;
+        }
+        .subTitle {
+          margin: 7rpx * @mb 14rpx * @mb 0;
+          font-size: 14rpx * @mb;
+          line-height: 20rpx * @mb;
+          max-height: 60rpx * @mb;
+          p {
+            font-size: 14rpx * @mb;
+          }
+        }
+        .btn {
+          width: 180rpx * @mb;
+          height: 32rpx * @mb;
+          font-size: 14rpx * @mb;
+          bottom: 21rpx * @mb;
+        }
+      }
+    }
+  }
+}

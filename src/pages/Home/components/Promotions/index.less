@@ -1,0 +1,55 @@
+.promotions {
+  padding: 0 157rpx;
+  margin-top: 95rpx;
+  max-width: 1920rpx;
+
+  .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .box {
+      margin-top: 51rpx;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 38rpx;
+      .card {
+        width: 510rpx;
+        box-shadow: 0rpx 10rpx 20rpx #00000029;
+        border-radius: 10rpx;
+        height: 204rpx;
+        overflow: hidden;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .promotions {
+    padding: 0;
+    margin-top: 37rpx * @mb;
+    max-width: 100%;
+    .content {
+      .box {
+        margin-top: 14rpx * @mb;
+        overflow-x: scroll;
+        white-space: nowrap;
+        // display: block;
+        padding-left: 17rpx * @mb;
+        box-sizing: border-box;
+
+        // 隐藏滚动条
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .card {
+          width: 334rpx * @mb;
+          display: inline-block;
+          margin-right: 9rpx * @mb;
+          height: 113rpx * @mb;
+        }
+      }
+    }
+  }
+}

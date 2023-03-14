@@ -1,0 +1,49 @@
+.popularLiveCasino {
+  padding: 0 158rpx;
+  margin-top: 95rpx;
+  max-width: 1920rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .content {
+    margin-top: 56rpx;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 33rpx;
+    grid-row-gap: 28rpx;
+    .card {
+      width: 238rpx;
+      // .img_border();
+
+      :global {
+        ._card_src {
+          height: 199rpx;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .popularLiveCasino {
+    padding: 0;
+    margin-top: 39rpx * @mb;
+    max-width: 100%;
+    .content {
+      margin-top: 16rpx * @mb;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-column-gap: 12rpx * @mb;
+      grid-row-gap: 12rpx * @mb;
+      .card {
+        width: 106rpx * @mb;
+        :global {
+          ._card_src {
+            height: 80rpx * @mb;
+          }
+        }
+      }
+    }
+  }
+}

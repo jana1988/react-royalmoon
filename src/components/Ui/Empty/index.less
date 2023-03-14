@@ -1,0 +1,32 @@
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  .content {
+    width: 196rpx;
+    height: 150rpx;
+  }
+  .text {
+    text-align: center;
+    color: #6c698d;
+    font-family: "Gen Jyuu Gothic Medium";
+    font-size: 18rpx;
+    margin-top: 42rpx;
+  }
+}
+@media (max-width: 750px) {
+  .empty {
+    .content {
+      width: 135rpx * @mb;
+      height: 100rpx * @mb;
+    }
+    .text {
+      font-size: 14rpx * @mb;
+      line-height: 25rpx * @mb;
+      margin-top: 27rpx * @mb;
+    }
+  }
+}

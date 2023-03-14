@@ -1,0 +1,80 @@
+.banks {
+  margin-top: 28rpx;
+  margin-bottom: 16rpx;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 18rpx;
+  grid-row-gap: 16rpx;
+  .bank {
+    box-sizing: border-box;
+    width: 223rpx;
+    height: 104rpx;
+    background: white;
+    border-radius: 8rpx;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid transparent;
+  }
+  ._default {
+    background: transparent;
+  }
+  .pengdingbank {
+    cursor: not-allowed;
+    position: relative;
+    border: none;
+    .bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .tip {
+      position: absolute;
+      top: 5rpx;
+      right: 5rpx;
+      height: 25rpx;
+      border-radius: 10rpx;
+      &_img {
+        width: auto;
+      }
+    }
+  }
+  .active {
+    border: 3px solid #fa6e42;
+  }
+}
+@media screen and (max-width: 750px) {
+  .banks {
+    margin-top: 20rpx * @mb;
+    grid-column-gap: 9rpx * @mb;
+    grid-row-gap: 8rpx * @mb;
+    grid-template-columns: 1fr 1fr;
+
+    .bank {
+      width: 165rpx * @mb;
+      height: 74rpx * @mb;
+      border-radius: 8rpx * @mb;
+      img {
+        // width: 40rpx * @mb;
+        // height: 40rpx * @mb;
+      }
+    }
+
+    .pengdingbank {
+      .tip {
+        top: 3rpx * @mb;
+        right: 3rpx * @mb;
+        height: 17rpx * @mb;
+        img {
+          width: auto;
+        }
+      }
+    }
+    .active {
+      // border: 1 solid #fa6e42;
+    }
+  }
+}

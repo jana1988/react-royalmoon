@@ -1,0 +1,221 @@
+.discount {
+  width: 1184rpx;
+  height: 899rpx;
+  background: #211d3b 0% 0% no-repeat padding-box;
+  box-shadow: 0rpx 10rpx 40rpx #00000029;
+  border-radius: 8rpx;
+  padding-top: 20rpx;
+  padding-left: 48rpx;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  .content {
+    width: 100%;
+    height: 100%;
+    .header {
+      color: #fa6e42;
+      font-size: 32rpx;
+      font-family: "Omnes Italic Bold";
+      svg {
+        width: 22rpx;
+        height: 22rpx;
+        fill: #fa6e42;
+        margin-right: 12rpx;
+      }
+    }
+  }
+  .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 32rpx;
+    margin-top: 50rpx;
+    overflow-y: scroll;
+    width: 100%;
+    height: 85%;
+    .box {
+      width: 342rpx;
+      padding-top: 20rpx;
+      padding-left: 11rpx;
+      padding-right: 11rpx;
+      padding-bottom: 30rpx;
+      box-sizing: border-box;
+      box-shadow: 0rpx 3rpx 6rpx #00000029;
+      border-radius: 8rpx;
+      background-color: #2b2847;
+      height: 507rpx;
+
+      .item {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .title {
+          color: #f5f5f5;
+          font-size: 26rpx;
+          font-family: "Omnes Italic Bold";
+        }
+        .img {
+          width: 320rpx;
+          height: 214rpx;
+          margin-top: 20rpx;
+        }
+        .name {
+          color: #f5f5f5;
+          font-size: 18rpx;
+          font-family: "Gen Jyuu Gothic Medium";
+          margin-top: 20rpx;
+        }
+        .tips {
+          width: 100%;
+          padding: 0 30rpx;
+          box-sizing: border-box;
+          margin-top: 10rpx;
+          .text {
+            display: flex;
+            justify-content: space-between;
+            // height: 22rpx;
+            &:nth-child(n + 2) {
+              margin-top: 4rpx;
+            }
+
+            .left {
+              font-family: "Gen Jyuu Gothic Medium";
+              color: #ffffff;
+              font-size: 16rpx;
+            }
+            .right {
+              color: #fa6e42;
+              font-family: "Gen Jyuu Gothic Medium";
+              font-size: 16rpx;
+            }
+          }
+        }
+        .button {
+          margin-top: 39rpx;
+          button {
+            &:disabled {
+              background-color: #3e3e65 !important;
+              color: #cbcbcb !important;
+              border: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .emptyWrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .empty {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.loading {
+  width: 1184rpx;
+  height: 899rpx;
+  background: #211d3b 0% 0% no-repeat padding-box;
+  box-shadow: 0rpx 10rpx 40rpx #00000029;
+  border-radius: 8rpx;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@top: 60rpx * @mb;
+@paddingBottom: 70rpx * @mb;
+@media screen and (max-width: 750px) {
+  .discount {
+    width: 100%;
+    height: 100vh;
+    background: none;
+    box-shadow: none;
+    border-radius: inherit;
+    padding-top: 0;
+    padding-left: 0;
+    position: relative;
+    z-index: 1;
+    .content {
+      .header {
+        color: #fa6e42;
+        font-size: 32rpx;
+        font-family: "Omnes Italic Bold";
+        svg {
+          width: 22rpx;
+          height: 22rpx;
+          fill: #fa6e42;
+          margin-right: 12rpx;
+        }
+      }
+    }
+
+    .wrap {
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+      align-items: center;
+      background-color: #211d3b;
+      margin-top: 0;
+      height: calc(~"100% - @{paddingBottom}");
+      padding-bottom: 70rpx * @mb;
+      .box {
+        margin-top: 20rpx * @mb;
+        display: flex;
+        justify-content: center;
+        padding: 15rpx * @mb 10rpx * @mb 20rpx * @mb;
+        width: 100%;
+        box-shadow: 0rpx * @mb 3rpx * @mb 6rpx * @mb #00000029;
+        border-radius: 8rpx * @mb;
+        width: 295rpx * @mb;
+        box-sizing: border-box;
+        height: 393rpx * @mb;
+        .item {
+          .title {
+            font-size: 18rpx * @mb;
+          }
+          .img {
+            width: 275rpx * @mb;
+            height: 184rpx * @mb;
+            margin-top: 17rpx * @mb;
+          }
+          .name {
+            font-size: 14rpx * @mb;
+            margin-top: 15rpx * @mb;
+          }
+          .tips {
+            width: 100%;
+            padding: 0 20rpx * @mb;
+            margin-top: 8rpx * @mb;
+            .text {
+              display: flex;
+              justify-content: space-between;
+              // height: 19rpx * @mb;
+              &:nth-child(n + 2) {
+                margin-top: 4rpx * @mb;
+              }
+
+              .left {
+                font-size: 12rpx * @mb;
+              }
+              .right {
+                font-size: 12rpx * @mb;
+              }
+            }
+          }
+          .button {
+            margin-top: 20rpx * @mb;
+          }
+        }
+      }
+    }
+  }
+}

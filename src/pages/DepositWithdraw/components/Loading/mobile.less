@@ -1,0 +1,24 @@
+.loading {
+  position: absolute;
+  top: 14rpx * @mb;
+  left: 0;
+  right: 0;
+  bottom: 14rpx * @mb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  img {
+    width: 28rpx * @mb;
+    height: 28rpx * @mb;
+    animation: rotate 2s infinite linear;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

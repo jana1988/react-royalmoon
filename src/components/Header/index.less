@@ -1,0 +1,341 @@
+.header {
+  position: sticky;
+  top: 0rpx;
+  left: 0rpx;
+  z-index: 11;
+  .wrapper {
+    max-width: 1920rpx;
+    background: #0f0e37 0% 0% no-repeat padding-box;
+    box-shadow: 0rpx 3rpx 6rpx #000029;
+    display: flex;
+    height: 84rpx;
+    align-items: center;
+    padding: 0 32rpx;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .userInfo {
+    display: flex;
+    align-items: center;
+    .balanceIcon {
+      width: 18rpx;
+      height: 18rpx;
+      fill: #f5f5f5;
+    }
+    .balance {
+      font-family: "Gen Jyuu Gothic Bold";
+      font-size: 18rpx;
+      color: #f5f5f5;
+      margin-left: 8rpx;
+    }
+    .user {
+      margin-left: 24rpx;
+      width: 19rpx;
+      height: 23rpx;
+      cursor: pointer;
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: #fa6e42;
+      }
+    }
+    .alarm {
+      position: relative;
+      margin-left: 24rpx;
+      width: 19rpx;
+      height: 23rpx;
+      cursor: pointer;
+      svg {
+        width: 100%;
+        height: 100%;
+        fill: #f5f5f5;
+      }
+    }
+    .unread {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 6rpx;
+      height: 6rpx;
+      border-radius: 3rpx;
+      background-color: #fa6e42;
+    }
+    .deposit {
+      margin: 0 24rpx;
+      width: 123rpx;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  height: 84rpx;
+  align-items: center;
+  z-index: 10;
+  .name {
+    margin-right: 39rpx;
+    height: 32rpx;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 2rpx solid transparent;
+    box-sizing: border-box;
+    span {
+      color: #f5f5f5;
+      font-size: 16rpx;
+      font-family: "Gen Jyuu Gothic Bold";
+      display: -webkit-box;
+    }
+    svg {
+      width: 18rpx;
+      height: 18rpx;
+      fill: #f5f5f5;
+      margin-right: 7rpx;
+    }
+  }
+  .active {
+    border-bottom: 2rpx solid #fa6e42;
+    span {
+      color: #fa6e42;
+    }
+    svg {
+      fill: #fa6e42;
+    }
+  }
+}
+
+.logo {
+  width: 186rpx;
+  height: 120rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.right {
+  display: flex;
+  align-items: center;
+  .favorite {
+    width: 21rpx;
+    height: 18rpx;
+    margin-right: 25rpx;
+    cursor: pointer;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #f5f5f5;
+    }
+  }
+  .search {
+    width: 20rpx;
+    height: 20rpx;
+    margin-right: 26rpx;
+    cursor: pointer;
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #f5f5f5;
+    }
+  }
+  .loginPc {
+    background: #3e3e65 0% 0% no-repeat padding-box;
+    margin-right: 26rpx;
+  }
+  .signupPc {
+    margin-right: 26px;
+  }
+}
+.lang {
+  position: relative;
+
+  .changeLang {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    img {
+      margin-right: 9rpx;
+      width: 39rpx;
+      height: 26rpx;
+    }
+    span {
+      color: #f5f5f5;
+      font-family: "Gen Jyuu Gothic Bold";
+      font-size: 16rpx;
+      margin-right: 6.5rpx;
+    }
+    .arrow {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      svg {
+        fill: #f5f5f5;
+      }
+    }
+  }
+  .main {
+    position: absolute;
+    left: 0;
+    top: 50rpx;
+    .triangle {
+      position: absolute;
+      top: -10rpx;
+      right: -60rpx;
+      border-top: 12rpx solid transparent;
+      border-bottom: 12rpx solid #3e3e65;
+      border-left: 12rpx solid transparent;
+      border-right: 12rpx solid transparent;
+    }
+    .content {
+      background: #3e3e65 0% 0% no-repeat padding-box;
+      box-shadow: 0rpx 3rpx 6rpx #00000029;
+      border-radius: 8rpx;
+      display: flex;
+      flex-direction: column;
+      margin-top: 12rpx;
+      position: absolute;
+      left: -40rpx;
+      width: 128rpx;
+      height: 106rpx;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8rpx 0;
+      box-sizing: border-box;
+
+      .item {
+        display: flex;
+        align-items: center;
+        height: 37rpx;
+        border-radius: 8rpx;
+        padding: 5rpx;
+        box-sizing: border-box;
+        cursor: pointer;
+        .img {
+          width: 39rpx;
+          height: 26rpx;
+          margin-right: 10rpx;
+        }
+        .name {
+          color: #f5f5f5;
+          font-size: 16rpx;
+          font-family: "Gen Jyuu Gothic Normal";
+        }
+      }
+      .active {
+        /* UI Properties */
+        background: #211d3b4d 0% 0% no-repeat padding-box;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .header {
+    max-width: 100%;
+    height: 60rpx * @mb;
+    .wrapper {
+      height: 60rpx * @mb;
+      padding: 0 16rpx * @mb;
+      justify-content: space-between;
+    }
+    .userInfo {
+      display: flex;
+      align-items: center;
+      .balanceIcon {
+        width: 18rpx * @mb;
+        height: 18rpx * @mb;
+      }
+      .balance {
+        font-size: 14rpx * @mb;
+        color: #f5f5f5;
+        margin-left: 16rpx * @mb;
+      }
+      .user {
+        margin-left: 15rpx * @mb;
+        width: 19rpx * @mb;
+        height: 23rpx * @mb;
+      }
+      .alarm {
+        position: relative;
+        margin-left: 15rpx * @mb;
+        width: 19rpx * @mb;
+        height: 23rpx * @mb;
+      }
+      .unread {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 6rpx * @mb;
+        height: 6rpx * @mb;
+        border-radius: 3rpx * @mb;
+        background-color: #fa6e42;
+      }
+    }
+  }
+  .menu {
+    width: 18rpx * @mb;
+    height: 18rpx * @mb;
+    position: relative;
+    z-index: 100;
+    .lang {
+      display: flex;
+      // position: absolute;
+      // top: -200rpx * @mb;
+      z-index: 1000;
+      .item {
+        display: flex;
+        width: 125rpx * @mb;
+        height: 32rpx * @mb;
+        align-items: center;
+        margin-right: 16rpx * @mb;
+        border-radius: 8rpx * @mb;
+        box-sizing: border-box;
+        background: #211d3b;
+        border: 1rpx * @mb solid transparent;
+
+        padding-left: 23rpx * @mb;
+        .img {
+          width: 18rpx * @mb;
+          height: 11rpx * @mb;
+          margin-right: 8rpx * @mb;
+        }
+        .name {
+          font-family: "Gen Jyuu Gothic Medium";
+          font-size: 12rpx * @mb;
+        }
+      }
+      .active {
+        border: 1rpx * @mb solid #f5f5f5cc;
+        background: #3e3e65;
+        .name {
+          color: #f5f5f5;
+        }
+      }
+    }
+  }
+
+  .logo {
+    width: 92rpx * @mb;
+    height: 54rpx * @mb;
+    top: 5rpx * @mb;
+    left: 50rpx * @mb;
+    margin: 0;
+  }
+  .right {
+    display: flex;
+    align-items: center;
+    .loginMb {
+      background: transparent;
+      height: 32rpx * @mb;
+    }
+    .signupMb {
+      width: 94rpx * @mb;
+      height: 32rpx * @mb;
+    }
+  }
+}

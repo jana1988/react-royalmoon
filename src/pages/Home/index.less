@@ -1,0 +1,41 @@
+.home {
+  position: relative;
+  max-width: 1920rpx;
+  overflow: hidden;
+  .loading {
+    height: 90vh;
+  }
+}
+.block {
+  width: 100%;
+  height: 482rpx;
+}
+
+@media screen and (max-width: 750px) {
+  .home {
+    max-width: 100%;
+  }
+  .block {
+    width: 100%;
+    height: 195rpx * @mb;
+  }
+
+  .search {
+    margin-top: 16rpx * @mb;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    p {
+      width: 343rpx * @mb;
+      height: 42rpx * @mb;
+      border-radius: 8rpx * @mb;
+      border: 1rpx * @mb solid #615f80;
+      color: #6c698d;
+      font-size: 14rpx * @mb;
+      display: flex;
+      align-items: center;
+      padding-left: 20rpx * @mb;
+      box-sizing: border-box;
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@top: 39rpx * @mb;
+.menu {
+  position: relative;
+  // z-index: 1000;
+}
+
+.icon {
+  width: 18rpx * @mb;
+  height: 18rpx * @mb;
+  svg {
+    width: 100%;
+    height: 100%;
+    fill: #fff;
+  }
+}
+
+.mask {
+  position: fixed;
+  left: 0;
+  top: 60rpx * @mb;
+  width: 100%;
+  height: 100%;
+  background: #111038b3;
+  z-index: 99;
+}
+
+.content {
+  position: absolute;
+  width: 303rpx * @mb;
+  top: 0;
+  // left: -16rpx * @mb;
+  left: 0;
+  height: calc(~"100vh - @{top}");
+  background: #2b2847;
+  z-index: 11;
+}
+
+.wrapper {
+  position: relative;
+  height: 100%;
+}
+
+.tree {
+  height: 78%;
+  overflow-y: scroll;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.menu_tree {
+  width: 100%;
+  z-index: 100;
+  .inner {
+    width: 303rpx * @mb;
+    font-family: "Gen Jyuu Gothic Medium";
+    display: flex;
+    flex-direction: column;
+    color: #6c698d;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding-left: 30rpx * @mb;
+    position: relative;
+    .title {
+      font-family: "Gen Jyuu Gothic Medium";
+      height: 53rpx * @mb;
+      font-size: 16rpx * @mb;
+      display: flex;
+      align-items: center;
+      color: #fff;
+      position: relative;
+      a {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "Gen Jyuu Gothic Medium";
+        font-size: 16rpx * @mb;
+        color: #fff;
+      }
+      div {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "Gen Jyuu Gothic Medium";
+        font-size: 16rpx * @mb;
+        color: #fff;
+      }
+
+      .arrow {
+        position: absolute;
+        right: 0;
+        top: 5rpx * @mb;
+        transform: rotate(270deg);
+        svg {
+          fill: #f5f5f5;
+          width: 30rpx * @mb;
+          height: 30rpx * @mb;
+        }
+      }
+
+      svg {
+        fill: #f5f5f5;
+        width: 18rpx * @mb;
+        height: 18rpx * @mb;
+        margin-right: 15rpx * @mb;
+      }
+    }
+    .active {
+      color: #fa6e42;
+      svg {
+        fill: #fa6e42;
+      }
+      .arrow {
+        transform: rotate(90deg);
+        top: 15rpx * @mb;
+
+        svg {
+          fill: #fa6e42;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  margin-left: 16rpx * @mb;
+  z-index: 100;
+}

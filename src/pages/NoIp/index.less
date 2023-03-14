@@ -1,0 +1,91 @@
+.no_ip {
+  position: fixed;
+  top: -1px;
+  left: -1px;
+
+  z-index: 999;
+  width: 101vw;
+  height: 101vh;
+  background: #ededed 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .wrap {
+    width: 1024rpx;
+    height: 1024rpx;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .img {
+      width: 754rpx;
+      height: 169rpx;
+    }
+    .title {
+      text-align: center;
+      letter-spacing: 1.6px;
+      color: #0f0e37;
+      font-size: 80rpx;
+      font-family: "Gen Jyuu Gothic Heavy";
+      margin-top: 10rpx;
+      letter-spacing: 1.6px;
+      color: #0f0e37;
+      height: 112rpx;
+      line-height: 112rpx;
+    }
+    .desc {
+      width: 654rpx;
+      height: 96rpx;
+      margin-top: 52rpx;
+
+      p {
+        text-align: center;
+        letter-spacing: 0.16rpx;
+        font-family: "Gen Jyuu Gothic Heavy";
+        font-size: 26rpx;
+        color: #646464;
+      }
+    }
+  }
+  .img_wrap {
+    width: 800rpx;
+    height: 800rpx;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .no_ip {
+    .wrap {
+      width: 337rpx * @mb;
+      height: 337rpx * @mb;
+      .img {
+        width: 246rpx * @mb;
+        height: 55rpx * @mb;
+        margin-top: 30rpx * @mb;
+      }
+      .title {
+        letter-spacing: 0;
+        font-size: 26rpx * @mb;
+        height: 36rpx * @mb;
+        margin-top: 7rpx * @mb;
+        line-height: 36rpx * @mb;
+      }
+      .desc {
+        width: 254rpx * @mb;
+        height: 131rpx * @mb;
+        margin-top: 15rpx * @mb;
+        p {
+          font-size: 14rpx * @mb;
+        }
+      }
+    }
+    .img_wrap {
+      width: 360rpx * @mb;
+      height: 360rpx * @mb;
+    }
+  }
+}

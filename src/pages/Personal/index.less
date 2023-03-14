@@ -1,0 +1,197 @@
+.personalPc {
+  padding: 72rpx 214rpx 0;
+  .personalWrap {
+    display: flex;
+    .left {
+      width: 282rpx;
+      height: 899rpx;
+      /* UI Properties */
+      background: #211d3b 0% 0% no-repeat padding-box;
+      box-shadow: 0rpx 10rpx 40rpx #00000029;
+      border-radius: 8rpx;
+      margin-right: 28rpx;
+      position: relative;
+      .img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 45rpx;
+        margin-top: 31rpx;
+
+        img {
+          width: 120rpx;
+          height: 98rpx;
+        }
+        .name {
+          margin-top: 14rpx;
+          color: #f5f5f5;
+          font-family: "Gen Jyuu Gothic Bold";
+          font-size: 18rpx;
+        }
+      }
+      .logout {
+        position: absolute;
+        bottom: 16rpx;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 238rpx;
+        height: 42rpx;
+        border: 1rpx solid #6c698d;
+        box-sizing: border-box;
+        background: transparent;
+      }
+    }
+    .right {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .personalMb {
+    width: 100%;
+    background: #211d3b;
+    height: 100vh;
+    .content {
+      padding: 0 16rpx * @mb;
+      box-sizing: border-box;
+      // height: calc(100vh - 16vw);
+      // overflow-y: scroll;
+      // overflow-x: hidden;
+    }
+  }
+  .header {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    padding-top: 25rpx * @mb;
+    margin-bottom: 29rpx * @mb;
+    .img {
+      width: 99rpx * @mb;
+      height: 99rpx * @mb;
+      box-sizing: border-box;
+      border: 3rpx * @mb solid #2b2847;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 13rpx * @mb;
+    }
+    img {
+      width: 71rpx * @mb;
+      height: 59rpx * @mb;
+      // margin-top: 42rpx * @mb;
+    }
+    .username {
+      color: #f5f5f5;
+      font-size: 18rpx * @mb;
+      font-family: "Gen Jyuu Gothic Bold";
+      // margin-top: 10rpx * @mb;
+    }
+  }
+  .wallet {
+    height: 66rpx * @mb;
+    background: #2b2847;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 16rpx * @mb;
+    padding-right: 8rpx * @mb;
+    // justify-content: center;
+    // flex-direction: column;
+    border-radius: 8rpx * @mb;
+    margin-bottom: 14rpx * @mb;
+
+    .left {
+      // display: flex;
+      svg {
+        fill: #6c698d;
+        margin-right: 15rpx * @mb;
+        width: 17rpx * @mb;
+        height: 17rpx * @mb;
+      }
+    }
+    .right {
+      .button {
+        font-size: 12rpx * @mb;
+      }
+    }
+    .num {
+      font-family: "Gen Jyuu Gothic Bold";
+      font-size: 18rpx * @mb;
+      line-height: 25rpx * @mb;
+      color: #f5f5f5;
+    }
+    .text {
+      color: #6c698d;
+      font-family: "Gen Jyuu Gothic  Medium";
+      font-size: 12rpx * @mb;
+      margin-left: 32rpx * @mb;
+    }
+  }
+  .logo {
+    width: 190rpx * @mb;
+    height: 121rpx * @mb;
+    padding-top: 42rpx * @mb;
+    padding-bottom: 35rpx * @mb;
+    margin: 0 auto;
+  }
+  .login_button {
+    width: 343rpx * @mb;
+    height: 48rpx * @mb;
+  }
+  .link {
+    .link_item {
+      height: 53rpx * @mb;
+      display: flex;
+      align-items: center;
+      position: relative;
+
+      .left {
+        font-family: "Gen Jyuu Gothic Medium";
+        font-size: 16rpx * @mb;
+        color: #f5f5f5;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        svg {
+          width: 18rpx * @mb;
+          height: 18rpx * @mb;
+          fill: #fff;
+          margin-right: 13rpx * @mb;
+        }
+      }
+
+      .arrow {
+        position: absolute;
+        right: 0rpx * @mb;
+        svg {
+          width: 30rpx * @mb;
+          height: 30rpx * @mb;
+          transform: rotate(180deg);
+          fill: #fff;
+        }
+      }
+    }
+  }
+  .logout {
+    padding-bottom: 50rpx * @mb;
+    height: 159rpx * @mb;
+    display: flex;
+    align-items: flex-end;
+    box-sizing: border-box;
+    .button {
+      border: 1rpx * @mb solid #6c698d;
+      width: 343rpx * @mb;
+      height: 32rpx * @mb;
+      background: transparent;
+      color: #6c698d;
+      font-size: 14rpx * @mb;
+      font-family: "Gen Jyuu Gothic Medium";
+    }
+  }
+}

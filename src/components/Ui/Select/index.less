@@ -1,0 +1,74 @@
+.select {
+  position: relative;
+  .button {
+    padding-right: 40rpx;
+    .icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto 0;
+
+      svg {
+        width: 18rpx;
+        height: 9rpx;
+      }
+    }
+  }
+  .main {
+    position: absolute;
+    z-index: 20;
+    .triangle {
+      position: absolute;
+      top: -10rpx;
+      left: 48rpx;
+      border-top: 12rpx solid transparent;
+      border-bottom: 12rpx solid #3e3e65;
+      border-left: 12rpx solid transparent;
+      border-right: 12rpx solid transparent;
+    }
+    .content {
+      max-height: 400rpx;
+      overflow-y: scroll;
+      background: #3e3e65 0% 0% no-repeat padding-box;
+      box-shadow: 0rpx 3rpx 6rpx #00000029;
+      border-radius: 8rpx;
+      display: flex;
+      flex-direction: column;
+      margin-top: 12rpx;
+      overflow-x: hidden;
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .select {
+    .button {
+      padding-right: 21rpx * @mb;
+      .icon {
+        right: 5rpx * @mb;
+        svg {
+          width: 12rpx * @mb;
+          height: 6rpx * @mb;
+        }
+      }
+    }
+    .main {
+      top: 30rpx * @mb;
+      left: 0rpx * @mb;
+      .triangle {
+        top: -10rpx * @mb;
+        left: 48rpx * @mb;
+        border-top: 12rpx * @mb solid transparent;
+        border-bottom: 12rpx * @mb solid #3e3e65;
+        border-left: 12rpx * @mb solid transparent;
+        border-right: 12rpx * @mb solid transparent;
+      }
+      .content {
+        max-height: 300rpx * @mb;
+        box-shadow: 0rpx 3rpx * @mb 6rpx * @mb #00000029;
+        border-radius: 8rpx * @mb;
+        margin-top: 12rpx * @mb;
+      }
+    }
+  }
+}

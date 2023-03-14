@@ -1,0 +1,212 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 70rpx;
+  margin: 0 162rpx 0 160rpx;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      align-items: center;
+      margin-bottom: 33rpx;
+      .name {
+        font-family: "Omnes Italic Bold";
+        font-size: 28rpx;
+        color: #fa6e42;
+        margin-right: 20rpx;
+      }
+      .desc {
+        font-family: "Omnes Italic Medium";
+        font-size: 20rpx;
+      }
+    }
+    .right {
+      display: flex;
+      .favorite {
+        margin-right: 30rpx;
+        cursor: pointer;
+      }
+      .fullscreen {
+        width: 24rpx;
+        height: 24rpx;
+        cursor: pointer;
+
+        svg {
+          width: 100%;
+          height: 100%;
+          fill: #fff;
+        }
+      }
+    }
+  }
+
+  .main {
+    margin-right: 30rpx;
+    .wrap {
+      width: 1264rpx;
+      height: 677rpx;
+      background-color: #01002d;
+    }
+    .game {
+      position: relative;
+      width: 1264rpx;
+      height: 677rpx;
+    }
+    .gameHtml {
+      position: relative;
+      width: 1264rpx;
+      height: 677rpx;
+    }
+    .iframe {
+      width: 100%;
+      height: 100%;
+      background-color: #222;
+    }
+  }
+  .hotGame {
+    flex: 0 0 300rpx;
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-family: "Omnes Italic Bold";
+      font-size: 28rpx;
+      margin-bottom: 33rpx;
+      color: #fa6e42;
+    }
+    .list {
+      box-sizing: border-box;
+      height: 677rpx;
+      overflow-y: scroll;
+      background-color: #393563cc;
+      border-radius: 8rpx;
+      padding: 24rpx;
+      .card {
+        width: 260rpx;
+        :global {
+          ._card_src {
+            height: 195rpx;
+          }
+        }
+      }
+
+      .game {
+        margin-bottom: 18rpx;
+        .img {
+          border-radius: 13rpx;
+          width: 260rpx;
+          height: 260rpx;
+        }
+        .gameTitle {
+          font-family: "Gen Jyuu Gothic Bold";
+          font-size: 20rpx;
+          margin-top: 12rpx;
+          color: #fff;
+        }
+        .gameSubTitle {
+          font-family: "Gen Jyuu Gothic";
+          font-size: 18rpx;
+          margin-top: 4rpx;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    max-width: 100%;
+    flex-direction: column;
+    padding-top: 0;
+    margin: 0 auto;
+
+    .title {
+      text-align: center;
+      margin-bottom: 16rpx * @mb;
+      font-size: 26rpx * @mb;
+    }
+
+    .main {
+      margin-right: 0;
+      display: flex;
+      flex-direction: column-reverse;
+      .title {
+        flex: 1;
+        margin: 0;
+        padding: 10rpx * @mb 25rpx * @mb;
+        font-size: 20rpx * @mb;
+        line-height: 26rpx * @mb;
+        color: #fff;
+        background-color: #111038;
+      }
+      .wrap {
+        height: 100vh;
+        width: 100%;
+        // background: none;
+      }
+      .gameRotate {
+        height: 100%;
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        transform: rotate(90deg) translateY(-100%);
+        transform-origin: 0 0;
+      }
+      .game {
+        height: 100%;
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 1000;
+      }
+      .fullscreen {
+        right: 6rpx * @mb;
+        bottom: 6rpx * @mb;
+        width: 40rpx * @mb;
+        height: 40rpx * @mb;
+        display: none;
+      }
+    }
+    .hotGame {
+      padding-top: 21rpx * @mb;
+      background-color: #393563cc;
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 17rpx * @mb;
+        background-color: transparent;
+        height: auto;
+        overflow: initial;
+        .game {
+          margin-bottom: 15rpx * @mb;
+          width: 165rpx * @mb;
+
+          &:nth-child(2n - 1) {
+            margin-right: 11rpx * @mb;
+          }
+
+          .img {
+            border-radius: 10rpx * @mb;
+            width: 165rpx * @mb;
+            height: 165rpx * @mb;
+          }
+          .gameTitle {
+            font-family: "Gen Jyuu Gothic Bold";
+            font-size: 14rpx * @mb;
+            margin-top: 10rpx * @mb;
+            color: #fff;
+          }
+          .gameSubTitle {
+            font-family: "Gen Jyuu Gothic";
+            font-size: 14rpx * @mb;
+            margin-top: 1rpx * @mb;
+          }
+        }
+      }
+    }
+  }
+}

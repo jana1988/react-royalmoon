@@ -1,0 +1,171 @@
+.popularSlots {
+  margin-top: 96rpx;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .box {
+      width: 1664rpx;
+      margin-top: 52rpx;
+      position: relative;
+      background: transparent
+        linear-gradient(
+          103deg,
+          #2d2657 0%,
+          #1d1b42 27%,
+          #38295e 52%,
+          #222047 77%,
+          #39325b 100%
+        )
+        0% 0% no-repeat padding-box;
+      box-shadow: 0rpx 10rpx 40rpx #00000029;
+      border: 3rpx solid #342f64;
+      border-radius: 20rpx;
+      padding-top: 92rpx;
+      padding-bottom: 28rpx;
+      box-sizing: border-box;
+      :global {
+        .swiper {
+          margin-left: 30rpx;
+          margin-right: 18rpx;
+          box-sizing: border-box;
+          .swiper-slide {
+            width: 300rpx;
+            height: 225rpx;
+            margin-right: 25rpx;
+          }
+        }
+      }
+      .card {
+        :global {
+          ._card_src {
+            // .img_border();
+          }
+        }
+      }
+      .navigation {
+        padding: 0 5rpx;
+      }
+    }
+  }
+}
+
+.game {
+  padding: 0 158rpx;
+  margin-top: 53rpx;
+  max-width: 1920rpx;
+  box-sizing: border-box;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 21rpx;
+    grid-row-gap: 31rpx;
+
+    .card {
+      position: relative;
+      width: 250rpx;
+      // .img_border();
+      box-sizing: border-box;
+      overflow: hidden;
+      :global {
+        ._card_src {
+          height: 188rpx;
+        }
+      }
+
+      &:hover {
+        // border-color: #fa6e42;
+        .hover_content {
+          opacity: 0.9;
+        }
+        .gameName {
+          animation: 5s wordsLoop linear infinite normal;
+        }
+      }
+
+      .hover_content {
+        background: #000000b3 0% 0% no-repeat padding-box;
+        transition: opacity 0.6s all;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        opacity: 0;
+        z-index: 2;
+        pointer-events: none;
+        border: 3rpx solid #fa6e42;
+        box-sizing: border-box;
+        border-radius: 20rpx;
+        img {
+          width: 52rpx;
+          height: 52rpx;
+        }
+        .gameName {
+          color: #f5f5f5;
+          font-size: 20rpx;
+          font-family: "Omnes Italic Bold";
+          margin-top: 19rpx;
+          margin-bottom: 21rpx;
+          text-align: center;
+          width: 100%;
+          white-space: nowrap;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+@keyframes wordsLoop {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+}
+@-webkit-keyframes wordsLoop {
+  0% {
+    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .popularSlotsMb {
+    margin-top: 26rpx * @mb;
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .cardWrapper {
+        margin-top: 17rpx * @mb;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 12rpx * @mb;
+        grid-column-gap: 61rpx;
+        .card {
+          width: 106rpx * @mb;
+          :global {
+            ._card_src {
+              width: 106rpx * @mb;
+              height: 80rpx * @mb;
+              // .img_border_mb();
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+image: node:latest
+
+stages:
+  - install
+  # - code-lint
+  - build
+  - deploy-stage
+  - deploy-prod
+
+cache:
+  paths:
+    - node_modules
+
+install:
+  stage: install
+  script:
+    - npm install
+#     - npm config set sass_binary_site https://npm.taobao.org/mirrors/node-sass/
+#     - npm install --registry=http://registry.npm.taobao.org
+
+deploy-copy:
+  stage: deploy-stage
+  script:
+    - CI=false npm run build
+    - scp -r build/* vagrant@104.198.89.33:~/t1sbe/api-frontend
+  when: on_success
+  only:
+    - development
+
+deploy-prod-api2:
+  stage: deploy-prod
+  script:
+    - npm install
+    - CI=false npm run build
+    - scp -r build/* vagrant@35.200.109.154:~/t1sbe/api-frontend
+  when: manual # 手动执行,需要点击
+  only:
+    - main
+
+deploy-prod-api3:
+  stage: deploy-prod
+  script:
+    - npm install
+    - CI=false npm run build
+    - scp -r build/* vagrant@35.189.143.116:~/t1sbe/api-frontend
+  when: manual # 手动执行,需要点击
+  only:
+    - main

@@ -1,0 +1,43 @@
+.toast {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  .dialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 343rpx;
+    height: 133rpx;
+    padding: 16rpx 30rpx;
+    box-sizing: border-box;
+    /* UI Properties */
+    background: #3e3e65e6 0% 0% no-repeat padding-box;
+    border: 1rpx solid #ffffff33;
+    border-radius: 8rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16rpx;
+    color: #f5f5f5;
+    text-align: center;
+    line-height: 2;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .toast {
+    .dialog {
+      width: 342rpx * @mb;
+      min-height: 78rpx * @mb;
+      border-radius: 8rpx * @mb;
+      font-size: 14rpx * @mb;
+      font-family: "Gen Jyuu Gothic Bold";
+      border: 0;
+    }
+  }
+}

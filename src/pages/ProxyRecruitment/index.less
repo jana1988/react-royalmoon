@@ -1,0 +1,262 @@
+.container {
+  text-align: center;
+  padding-top: 133rpx;
+  padding-left: 161rpx;
+  padding-right: 161rpx;
+  padding-bottom: 90rpx;
+  .h1 {
+    letter-spacing: 1.28rpx;
+    color: #f5f5f5;
+    font-size: 64rpx;
+    font-family: "Omnes Italic Bold";
+  }
+  .h2 {
+    margin-top: 67rpx;
+    letter-spacing: 1rpx;
+    color: #f5f5f5;
+    font-size: 50rpx;
+    font-family: "Omnes Italic Bold";
+  }
+  .h3 {
+    color: #f5f5f5;
+    // font-weight: bold;
+    font-size: 36rpx;
+    font-family: "Gen Jyuu Gothic Bold";
+  }
+  .hdesc {
+    margin-top: 17rpx;
+    color: #6c698d;
+    font-size: 16rpx;
+    font-family: "Gen Jyuu Gothic Medium";
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    margin-top: 42rpx;
+    .content {
+      font-size: 18rpx;
+      width: auto;
+      height: auto;
+      font-family: "Gen Jyuu Gothic Heavy";
+      padding: 14rpx 40rpx;
+    }
+  }
+  .commission_num {
+    justify-content: space-around;
+    display: flex;
+    margin-left: 331rpx;
+    margin-right: 335rpx;
+    margin-top: 3rpx;
+    span {
+      color: #f5f5f5;
+      font-size: 20rpx;
+      font-family: "Gen Jyuu Gothic Heavy";
+    }
+  }
+  .advantages {
+    margin: 175rpx 0;
+    .content {
+      display: flex;
+      position: relative;
+      margin-right: -500rpx;
+      .left {
+        width: 30%;
+      }
+      .right {
+        position: absolute;
+        left: 30%;
+        margin-top: 80rpx;
+        height: 100%;
+      }
+    }
+  }
+  .introduction {
+    margin-top: 142rpx;
+    .content div {
+      margin-top: 45rpx;
+      line-height: 32rpx;
+      font-family: "Gen Jyuu Gothic Medium";
+      font-size: 26rpx;
+      text-align: left;
+      color: #f5f5f5;
+      opacity: 0.8;
+    }
+  }
+  .introduction2 {
+    margin-top: 77rpx;
+    .swiperDiv {
+      margin-top: 53rpx;
+    }
+    .content {
+      font-family: "Gen Jyuu Gothic Medium";
+      font-size: 26rpx;
+      color: #f5f5f5;
+      text-align: left;
+      line-height: 40rpx;
+      margin-top: 26rpx;
+    }
+  }
+  .contact {
+    padding-top: 200rpx;
+    svg {
+      fill: #fa6e42;
+      width: 48rpx;
+      height: auto;
+    }
+    & > div {
+      margin-top: 38rpx;
+      margin-left: 150rpx;
+      margin-right: 150rpx;
+      display: flex;
+      justify-content: space-evenly;
+      & > div {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        & > div {
+          margin-top: 30rpx;
+          color: #f5f5f5;
+          font-size: 18rpx;
+          line-height: 27rpx;
+          font-family: "Gen Jyuu Gothic Bold";
+        }
+      }
+    }
+  }
+}
+@mMargin: 37rpx * @mb;
+@media (max-width: 750px) {
+  .container {
+    padding-top: 29rpx * @mb;
+    padding-left: 0;
+    padding-right: 0;
+    .h1 {
+      font-size: 26rpx * @mb;
+      margin-left: @mMargin;
+      margin-right: @mMargin;
+    }
+    .h2 {
+      font-size: 24rpx * @mb;
+      margin-top: @mMargin;
+      margin-left: @mMargin;
+      margin-right: @mMargin;
+    }
+    .h3 {
+      font-size: 16rpx * @mb;
+    }
+    .hdesc {
+      margin-top: 9rpx * @mb;
+      margin-left: @mMargin;
+      margin-right: @mMargin;
+      font-size: 12rpx * @mb;
+      line-height: 18rpx * @mb;
+    }
+    .pyramid {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-around;
+      img {
+        width: 45rpx * @mb;
+      }
+    }
+
+    .commission_num {
+      margin-top: 6rpx * @mb;
+      margin-left: 10rpx * @mb;
+      margin-right: 10rpx * @mb;
+      span {
+        font-size: 12rpx * @mb;
+      }
+      :nth-child(1) {
+        color: #64a6ff;
+      }
+
+      :nth-child(2) {
+        color: #21d1cf;
+      }
+
+      :nth-child(3) {
+        color: #f77d47;
+      }
+
+      :nth-child(4) {
+        color: #ff7272;
+      }
+    }
+    .button {
+      margin-top: 15rpx * @mb;
+      .content {
+        font-size: 14rpx * @mb;
+        padding: 7rpx * @mb 26rpx * @mb;
+      }
+    }
+    .advantages {
+      .content {
+        margin-right: 0;
+        flex-direction: column;
+        .left {
+          width: auto;
+          order: 2;
+        }
+        .right {
+          position: relative;
+          order: 1;
+          left: 0;
+          margin-left: 10rpx * @mb;
+          overflow: hidden;
+          img {
+            width: 588rpx * @mb;
+          }
+        }
+      }
+    }
+    .introduction {
+      margin-top: 48rpx * @mb;
+      .content div {
+        font-size: 14rpx * @mb;
+        margin-top: 20rpx * @mb;
+        line-height: 20rpx * @mb;
+        margin-left: @mMargin;
+        margin-right: @mMargin;
+        color: #b8b6c9;
+      }
+    }
+    .introduction2 {
+      margin-top: 41rpx * @mb;
+      .swiperDiv {
+        margin-top: 17rpx * @mb;
+      }
+      .content {
+        font-size: 14rpx * @mb;
+        margin-top: 16rpx * @mb;
+        line-height: 20rpx * @mb;
+        margin-left: @mMargin;
+        margin-right: @mMargin;
+        color: #b8b6c9;
+      }
+    }
+
+    .contact {
+      text-align: left;
+      svg {
+        width: 22rpx * @mb;
+        margin-right: 16rpx * @mb;
+      }
+      & > div {
+        display: block;
+        & > div {
+          display: flex;
+          align-items: center;
+          flex-flow: row;
+          justify-content: flex-start;
+          margin-top: 25rpx * @mb;
+          & > div {
+            font-size: 14rpx * @mb;
+            line-height: 20rpx * @mb;
+          }
+        }
+      }
+    }
+  }
+}

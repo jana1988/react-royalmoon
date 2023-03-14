@@ -1,0 +1,126 @@
+:global {
+  ._card {
+    cursor: pointer;
+    width: 300rpx;
+    position: relative;
+    // z-index: 1;
+    // overflow: hidden;
+
+    &_src {
+      width: 100%;
+      height: 225rpx;
+      position: relative;
+      box-sizing: border-box;
+      &_img {
+        overflow: hidden;
+        border: 3rpx solid #0f0e37;
+        border-radius: 20rpx;
+        box-sizing: border-box;
+      }
+    }
+    &_title {
+      font-family: "Gen Jyuu Gothic Bold";
+      font-size: 20rpx;
+      line-height: 30rpx;
+      color: #f5f5f5;
+      margin-top: 10rpx;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 100%;
+    }
+    &_desc {
+      display: flex;
+      margin-top: 5rpx;
+      justify-content: space-between;
+      align-items: center;
+
+      &_left {
+        font-family: "Gen Jyuu Gothic Medium";
+        font-size: 18rpx;
+        color: #6c698d;
+        width: 80%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        line-height: 27rpx;
+      }
+      &_right {
+        position: relative;
+        width: 20%;
+        height: 27rpx;
+        ._card_rtp {
+          position: absolute;
+          top: -40rpx;
+          right: 0;
+          &_info {
+            width: 40rpx;
+            height: 60rpx;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            box-sizing: border-box;
+            svg {
+              width: 22rpx;
+              height: 22rpx;
+              fill: #6c698d;
+            }
+          }
+        }
+      }
+    }
+    &_favourite {
+      position: absolute;
+      top: 12rpx;
+      right: 12rpx;
+      z-index: 4;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    ._card {
+      width: 165rpx * @mb;
+
+      &_src {
+        height: 124rpx * @mb;
+        border-radius: 10rpx * @mb;
+        &_img {
+          border-radius: 10rpx * @mb;
+        }
+      }
+      &_title {
+        font-size: 14rpx * @mb;
+        line-height: 19rpx * @mb;
+        margin-top: 7rpx * @mb;
+      }
+      &_desc {
+        margin-top: 0;
+        &_left {
+          font-size: 14rpx * @mb;
+          line-height: 19rpx * @mb;
+        }
+        &_right {
+          height: 19rpx * @mb;
+          ._card_rtp {
+            top: -21rpx * @mb;
+            &_info {
+              height: 60rpx * @mb;
+              width: 40rpx * @mb;
+              padding-right: 7rpx * @mb;
+              align-items: center;
+              padding-top: 4rpx * @mb;
+              svg {
+                width: 14rpx * @mb;
+                height: 14rpx * @mb;
+              }
+            }
+          }
+        }
+      }
+      &_favourite {
+        top: 12rpx * @mb;
+        right: 12rpx * @mb;
+      }
+    }
+  }
+}

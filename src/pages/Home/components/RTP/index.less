@@ -1,0 +1,164 @@
+.rtp {
+  margin-top: 96rpx;
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .box {
+      width: 1664rpx;
+      margin-top: 54rpx;
+      position: relative;
+      box-sizing: border-box;
+      .swiperWarpperUp {
+        :global {
+          .swiper {
+            margin: 0 30rpx;
+            padding-bottom: 61rpx;
+
+            .swiper-slide {
+              width: 250rpx;
+              height: 188rpx;
+              margin-right: 21rpx;
+            }
+            .swiper-pagination {
+              display: none;
+            }
+          }
+        }
+        .card {
+          width: 250rpx;
+          :global {
+            ._card_src {
+              height: 188rpx;
+            }
+          }
+        }
+        .navigation {
+          padding: 0 5rpx;
+        }
+      }
+      .swiperWarpperDn {
+        :global {
+          .swiper {
+            margin: 0 30rpx;
+            padding-bottom: 31rpx;
+            .swiper-slide {
+              width: 250rpx;
+              height: 188rpx;
+              margin-right: 21rpx;
+            }
+            .swiper-pagination {
+              display: none;
+            }
+          }
+        }
+        .card {
+          width: 250rpx;
+          :global {
+            ._card_src {
+              height: 188rpx;
+            }
+            ._card_rtp {
+              ._card_rtp_right {
+                color: #42fa73;
+                svg {
+                  fill: #42fa73;
+                  transform: rotate(90deg);
+                }
+              }
+            }
+          }
+        }
+        .navigation {
+          padding: 0 5rpx;
+        }
+      }
+    }
+  }
+  .card_loading {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20rpx;
+    :global {
+      ._card_load {
+        width: 250rpx;
+
+        ._card_load_img {
+          height: 188rpx;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 750px) {
+  .rtp {
+    margin-top: 36rpx * @mb;
+    .content {
+      .box {
+        margin-top: 17rpx * @mb;
+        width: 100%;
+        .swiperWarpperUp {
+          :global {
+            .swiper {
+              margin: 0 16rpx * @mb;
+              padding-bottom: 32rpx * @mb;
+              .swiper-slide {
+                width: 106rpx * @mb;
+                height: 80rpx * @mb;
+                margin-right: 12rpx * @mb;
+              }
+            }
+          }
+          .card {
+            width: 106rpx * @mb;
+
+            :global {
+              ._card_src {
+                height: 80rpx * @mb;
+                // .img_border_mb();
+              }
+            }
+          }
+        }
+        .swiperWarpperDn {
+          :global {
+            .swiper {
+              margin: 0 16rpx * @mb;
+              padding-bottom: 16rpx * @mb;
+              .swiper-slide {
+                width: 106rpx * @mb;
+                height: 80rpx * @mb;
+                margin-right: 12rpx * @mb;
+              }
+            }
+          }
+          .card {
+            width: 106rpx * @mb;
+
+            :global {
+              ._card_src {
+                height: 80rpx * @mb;
+                // .img_border_mb();
+              }
+            }
+          }
+        }
+      }
+    }
+    .card_loading {
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-row-gap: 20rpx * @mb;
+      grid-column-gap: 12rpx * @mb;
+      margin: 0 17rpx * @mb;
+
+      :global {
+        ._card_load {
+          width: 106rpx * @mb;
+          ._card_load_img {
+            height: 80rpx * @mb;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,63 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+  .dialog {
+    position: absolute;
+    left: 16rpx * @mb;
+    top: 50%;
+    width: 343rpx * @mb;
+    padding-bottom: 16rpx * @mb;
+    box-sizing: border-box;
+    transform: translateY(-50%);
+    background-color: #3e3e65;
+    border-radius: 8rpx * @mb;
+    box-shadow: 0rpx 3rpx * @mb 6rpx * @mb #00000029;
+    animation: showSlow 0.3s forwards;
+    .header {
+      margin-top: 22rpx * @mb;
+      width: 100%;
+      text-align: center;
+      color: #fa6e42;
+      font-family: "Gen Jyuu Gothic Bold";
+      font-size: 16rpx * @mb;
+      position: relative;
+      margin-bottom: 20rpx * @mb;
+      .close {
+        width: 17rpx * @mb;
+        height: 17rpx * @mb;
+        position: absolute;
+        right: 16rpx * @mb;
+        top: 0;
+        svg {
+          fill: #6c698d;
+        }
+      }
+    }
+    .content {
+      margin-left: 20rpx * @mb;
+      margin-right: 15rpx * @mb;
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8rpx * @mb;
+        div {
+          font-family: "Gen Jyuu Gothic Medium";
+          color: #f5f5f5;
+          font-size: 14rpx * @mb;
+          line-height: 20rpx * @mb;
+          &:not(:first-child) {
+            width: 165rpx * @mb;
+            text-align: right;
+            overflow-wrap: break-word;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.title {
+  font-family: "Gen Jyuu Gothic Heavy";
+  font-size: 32rpx;
+  color: #ffffff;
+  margin-bottom: 35rpx;
+}
+.text {
+  font-family: "Gen Jyuu Gothic Medium";
+  font-size: 18rpx;
+  color: #f5f5f5;
+  line-height: 40rpx;
+  white-space: pre-line;
+  height: 744rpx;
+  overflow-y: scroll;
+}
+.bgHide {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 79%;
+  background: #211d3b 0% 0% no-repeat padding-box;
+  border-radius: 0rpx 8rpx 8rpx 8rpx;
+  padding: 32rpx 50rpx;
+  box-sizing: border-box;
+  z-index: -1;
+  padding-bottom: 841.89px;
+  .text {
+    overflow-y: visible;
+    height: auto;
+  }
+}
+.bg {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 750px) {
+  .textMb {
+    font-family: "Gen Jyuu Gothic Medium";
+    font-size: 14rpx * @mb;
+    color: #f5f5f5;
+    line-height: 24rpx * @mb;
+  }
+}

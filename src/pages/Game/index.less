@@ -1,0 +1,42 @@
+.container {
+  max-width: 1920rpx;
+  .game {
+    width: 100%;
+    height: 100vh;
+    .iframe {
+      width: 100%;
+      height: 100%;
+      background-color: #222;
+    }
+
+    .fullscreen {
+      position: absolute;
+      right: 20rpx;
+      bottom: 20rpx;
+      width: 50rpx;
+      height: 50rpx;
+      svg {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0;
+    margin: 0 auto;
+
+    .game {
+      .fullscreen {
+        right: 6rpx * @mb;
+        bottom: 6rpx * @mb;
+        width: 40rpx * @mb;
+        height: 40rpx * @mb;
+        display: none;
+      }
+    }
+  }
+}

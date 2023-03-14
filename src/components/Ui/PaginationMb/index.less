@@ -1,0 +1,36 @@
+.readMore {
+  margin-top: 14rpx * @mb;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  .button {
+    width: 198rpx;
+    height: 42rpx;
+    border: 1px solid #fa6e42;
+    border-radius: 8rpx;
+    background: rgb(39, 38, 75);
+
+    .text {
+      font-size: 18rpx;
+      color: #fa6e42;
+      font-family: "Gen Jyuu Gothic Heavy";
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .readMore {
+    margin-top: 14rpx * @mb;
+    width: 100%;
+    .button {
+      width: 130rpx * @mb;
+      height: 32rpx * @mb;
+      border: 1rpx * @mb solid #fa6e42;
+      border-radius: 8rpx * @mb;
+      .text {
+        font-size: 12rpx * @mb;
+        font-family: "Gen Jyuu Gothic Bold";
+      }
+    }
+  }
+}

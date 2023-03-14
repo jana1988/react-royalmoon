@@ -1,0 +1,213 @@
+.live {
+  padding-top: 68rpx;
+  margin: 0 162rpx 0 162rpx;
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    .left {
+      display: flex;
+      .text_en {
+        font-family: "Omnes Italic Bold";
+        font-size: 32rpx;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        color: #fa6e42;
+      }
+      .text_ja {
+        font-family: "Mochiy Pop One Regular";
+        font-size: 22rpx;
+        letter-spacing: 0;
+        display: flex;
+        align-items: center;
+        color: #fa6e42;
+      }
+      svg {
+        width: 22rpx;
+        height: 22rpx;
+        margin-right: 12rpx;
+        fill: #fa6e42;
+      }
+    }
+    .right {
+      display: flex;
+
+      .selectButton {
+        background: #3e3e65 0% 0% no-repeat padding-box;
+        margin-right: 16rpx;
+      }
+
+      .search {
+        position: relative;
+
+        .input {
+          font-size: 16rpx;
+          border-radius: 8rpx;
+          width: 122rpx;
+          height: 42rpx;
+          padding: 0 50rpx 0 30rpx;
+          background-color: #3e3e65;
+          color: #fff;
+          cursor: pointer;
+        }
+
+        input::placeholder {
+          color: #fff;
+        }
+
+        .icon {
+          position: absolute;
+          right: 16rpx;
+          top: 50%;
+          transform: translateY(-50%);
+
+          svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 18rpx;
+            fill: #f5f5f5;
+          }
+        }
+      }
+    }
+  }
+
+  .labels {
+    margin: 25rpx 0;
+    display: flex;
+    align-items: center;
+    gap: 16rpx;
+    .label {
+      background-image: none;
+      background-color: #3e3e65;
+    }
+
+    .active {
+      background: transparent linear-gradient(281deg, #fa6242 0%, #f4933f 100%)
+        0% 0% no-repeat padding-box;
+    }
+  }
+
+  .content {
+    margin-top: 35rpx;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 22rpx;
+    grid-column-gap: 22rpx;
+    cursor: pointer;
+
+    .empty {
+      margin: 30rpx auto;
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 40rpx;
+  }
+}
+
+@media (max-width: 750px) {
+  .live {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 22rpx * @mb 16rpx * @mb 0;
+    .nav {
+      justify-content: flex-end;
+      flex-direction: column;
+      .left {
+        margin-bottom: 14rpx * @mb;
+
+        svg {
+          width: 22rpx * @mb;
+          height: 29rpx * @mb;
+          margin-right: 10rpx * @mb;
+        }
+
+        .svg {
+          fill: #6c698d;
+        }
+
+        .text_en {
+          font-size: 26rpx * @mb;
+        }
+        .text_ja {
+          font-size: 26rpx * @mb;
+        }
+      }
+      .right {
+        justify-content: space-between;
+        .selectButton {
+          border-radius: 8rpx * @mb;
+          background: #3e3e65 0% 0% no-repeat padding-box;
+          margin-right: 10rpx * @mb;
+        }
+
+        .search {
+          flex: 1;
+          .input {
+            @padding: 25rpx * @mb;
+
+            font-size: 16rpx * @mb;
+            border-radius: 8rpx * @mb;
+            width: calc(~"100% - @{padding}");
+            padding: 0 @padding 0 0;
+            height: 32rpx * @mb;
+            background-color: transparent;
+            color: #fff;
+          }
+
+          input::placeholder {
+            color: transparent;
+          }
+
+          .icon {
+            right: 10rpx * @mb;
+
+            svg {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 18rpx * @mb;
+            }
+          }
+        }
+      }
+    }
+
+    .labels {
+      max-width: 100%;
+      overflow: auto;
+      margin: 16rpx * @mb 0 17rpx * @mb;
+      padding-bottom: 2rpx * @mb;
+      display: flex;
+      align-items: center;
+      gap: 6rpx * @mb;
+
+      &::-webkit-scrollbar {
+        // height: 2px;
+        display: none;
+      }
+
+      .label {
+        min-width: fit-content;
+        height: 32rpx * @mb;
+        font-size: 12rpx * @mb;
+      }
+    }
+
+    .content {
+      margin-top: 17rpx * @mb;
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: 16rpx * @mb;
+      grid-column-gap: 14rpx * @mb;
+      .empty {
+        margin: 50rpx * @mb auto;
+      }
+    }
+  }
+}

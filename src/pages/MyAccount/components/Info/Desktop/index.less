@@ -1,0 +1,97 @@
+.info-content {
+  display: flex;
+  margin-bottom: 26rpx;
+}
+.card {
+  // width: 581rpx;
+  width: 100%;
+
+  height: 176rpx;
+  background: #211d3b 0% 0% no-repeat padding-box;
+  box-shadow: 0rpx 10rpx 40rpx #00000029;
+  border-radius: 8rpx;
+  padding: 15rpx 20rpx;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+.card-title {
+  font-family: Gen Jyuu Gothic Medium;
+  color: #6c698d;
+  font-size: 18rpx;
+}
+.card-number {
+  span {
+    font-family: Gen Jyuu Gothic Bold;
+    font-size: 36rpx;
+    letter-spacing: 0.72rpx;
+    color: #f5f5f5;
+    &:nth-child(1) {
+      font-size: 24rpx;
+    }
+  }
+}
+.card-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 14rpx;
+}
+.card-btn {
+  // width: 260rpx;
+  width: 550rpx;
+
+  height: 42rpx;
+  background: #44416b;
+  border: 2rpx solid #4ef692;
+  border-radius: 8rpx;
+  color: #4ef692;
+  font-family: Gen Jyuu Gothic Heavy;
+  font-size: 16rpx;
+}
+.card-btn-primary {
+  background: transparent linear-gradient(275deg, #fa6242 0%, #f4933f 100%) 0%
+    0% no-repeat padding-box;
+  border: 2rpx solid transparent;
+  color: #f5f5f5;
+}
+.wallet-card {
+  // margin-right: 20rpx;
+}
+.wallet-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  .card-number {
+    text-align: center;
+  }
+}
+.level-card {
+  padding: 15rpx 20rpx 20rpx 20rpx;
+}
+.level-card-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.level-card-row {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 10rpx;
+}
+.level-card-label {
+  font-family: Gen Jyuu Gothic Medium;
+  font-size: 16rpx;
+  color: #6c698d;
+  min-width: 140rpx;
+  margin-right: 20rpx;
+  position: relative;
+  top: -2rpx;
+}
+@media screen and (max-width: 750px) {
+  .info-content {
+    display: none;
+  }
+}

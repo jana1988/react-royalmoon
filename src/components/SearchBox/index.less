@@ -1,0 +1,81 @@
+.search_box {
+  width: 949rpx;
+  input {
+    width: 100% !important;
+  }
+  .content {
+    margin-top: 32rpx;
+    height: 510rpx;
+    overflow-y: scroll;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 48rpx;
+    grid-row-gap: 20rpx;
+    cursor: pointer;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .card {
+      width: 200rpx;
+      :global {
+        ._card_src,
+        ._card_load_img {
+          height: 150rpx;
+        }
+      }
+    }
+  }
+  .empty {
+    height: 500rpx;
+  }
+}
+
+@media (max-width: 750px) {
+  .search_box {
+    width: 100%;
+    .input {
+      margin-top: 19rpx * @mb;
+      padding-bottom: 24rpx * @mb;
+      input {
+        border-color: #615f80;
+        height: 5vh;
+        font-family: "Gen Jyuu Gothic Medium";
+        color: #6c698d;
+        font-size: 14rpx * @mb;
+        background: #1f1e334d;
+        &::placeholder {
+          color: #6c698d;
+          font-size: 14rpx * @mb;
+        }
+      }
+    }
+
+    .content {
+      margin-top: 0;
+      padding-top: 0;
+      padding-bottom: 15rpx * @mb;
+      height: 56vh;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 7rpx * @mb;
+      grid-row-gap: 15rpx * @mb;
+      box-sizing: border-box;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      .card {
+        width: 167rpx * @mb;
+        :global {
+          ._card_src,
+          ._card_load_img {
+            height: 125rpx * @mb;
+          }
+        }
+      }
+    }
+    .empty {
+      height: 56vh;
+    }
+  }
+}

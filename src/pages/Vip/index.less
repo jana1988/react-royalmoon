@@ -1,0 +1,351 @@
+.body {
+  .container {
+    position: relative;
+    .logoWrap {
+      width: 100%;
+      overflow: hidden;
+      .logo {
+        width: 100%;
+      }
+    }
+    .logoTitleContainer {
+      position: absolute;
+      bottom: 182rpx;
+      font-size: 28rpx;
+      line-height: 32rpx;
+      color: #f5f5f5;
+      width: 100%;
+      text-align: center;
+      font-family: "Gen Jyuu Gothic Bold";
+    }
+  }
+
+  .sushiContent {
+    padding: 0;
+    .content {
+      .box {
+        .ul {
+          width: 100%;
+          text-align: center;
+          display: flex;
+          justify-content: center;
+          margin-top: 55rpx;
+          gap: 60rpx;
+          .liWarprer {
+            display: inline-block;
+            background: linear-gradient(180deg, #342b5b, #3d3253, #342b5b);
+            padding: 0 12rpx 72rpx 12rpx;
+            border-radius: 8rpx;
+            &:nth-last-child(2) {
+              position: relative;
+              top: -50rpx;
+            }
+            .li {
+              width: 420rpx;
+              height: 480rpx;
+              align-items: center;
+              display: flex;
+              flex-direction: column;
+              .img {
+                width: 266rpx;
+                height: 188rpx;
+                margin: 60rpx 0 20rpx 0;
+              }
+              .title {
+                font-family: "Omnes Italic Bold";
+                font-size: 32rpx;
+                color: #fa6e42;
+              }
+              .desc {
+                font-family: "Gen Jyuu Gothic Medium";
+                color: #f5f5f5;
+                font-size: 16rpx;
+                margin-top: 10rpx;
+                line-height: 32rpx;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sushiLV {
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(180deg, #342b5b, #3d3253, #342b5b);
+    box-shadow: 0px 10px 40px #00000029;
+    border: 0.5px solid #ffffff4d;
+    border-radius: 7px;
+    opacity: 1;
+    margin: 70rpx auto 0;
+    flex-direction: column;
+    padding: 0 50rpx;
+    max-width: 1369rpx;
+
+    .li {
+      display: flex;
+      width: 100%;
+      margin: 30rpx 0;
+      flex-wrap: wrap;
+      img {
+        width: 136rpx;
+        height: 93rpx;
+      }
+    }
+  }
+  .bgVipWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 46rpx auto 0;
+    flex-wrap: wrap;
+    position: relative;
+    .bgVip {
+      width: 1500rpx;
+    }
+    .bgVipContent {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1350rpx;
+      font-size: 30rpx;
+      color: #fff;
+      font-family: "Gen Jyuu Gothic Bold";
+      line-height: 47rpx;
+      text-shadow: 0px 3px 6px #00000029;
+      text-align: left;
+    }
+  }
+  .reminder {
+    width: 1450rpx;
+    margin: 50rpx auto 0;
+    .textTitle {
+      font-family: "Gen Jyuu Gothic Bold";
+      font-size: 24rpx;
+      color: #f5f5f5;
+    }
+    .textContent {
+      font-family: "Gen Jyuu Gothic Medium";
+      font-size: 18rpx;
+      line-height: 32rpx;
+      color: #f5f5f5;
+      padding-bottom: 90rpx;
+    }
+  }
+
+  .tableWrap {
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th {
+      font-size: 24rpx;
+      color: #fa6e42;
+      line-height: 36rpx;
+      font-family: "Gen Jyuu Gothic Bold";
+      overflow-wrap: break-word;
+    }
+    tr {
+      border-bottom: 1px solid #ffffff4d;
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    td {
+      padding: 30rpx 0;
+      text-align: center;
+      color: #f5f5f5;
+      font-size: 32rpx;
+      line-height: 47rpx;
+      font-family: "Gen Jyuu Gothic Heavy";
+    }
+    .column {
+      color: #fa6e42;
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  .body {
+    .container {
+      .logoWrap {
+        width: 100%;
+        overflow: hidden;
+        .logo {
+          margin-left: -205rpx * @mb;
+          margin-top: -30rpx * @mb;
+          width: 784rpx * @mb;
+          height: 442rpx * @mb;
+        }
+      }
+      .logoTitleContainer {
+        bottom: 126rpx * @mb;
+        font-size: 14rpx * @mb;
+        line-height: 18rpx * @mb;
+      }
+    }
+
+    .textWrap {
+      padding: 20rpx * @mb;
+      .textTitle {
+        font-family: "Gen Jyuu Gothic Bold";
+        font-size: 16rpx * @mb;
+        color: #f5f5f5;
+      }
+      .textContent {
+        line-height: 20rpx * @mb;
+        font-family: "Gen Jyuu Gothic Normal";
+        font-size: 14rpx * @mb;
+        color: #f5f5f5;
+      }
+      .textLoadMore {
+        display: block;
+        font-family: "Gen Jyuu Gothic Medium";
+        margin: 20rpx * @mb auto;
+        font-size: 14rpx * @mb;
+        color: #fa6e42;
+      }
+    }
+
+    .bgVipWrap {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      .bgVip {
+        width: 100%;
+      }
+      .bgVipContent {
+        width: 285rpx * @mb;
+        text-align: center;
+        padding: 0 50rpx * @mb;
+        font-size: 14rpx * @mb;
+        color: #ffffff;
+        font-family: "Gen Jyuu Gothic Bold";
+        line-height: 20rpx * @mb;
+      }
+    }
+
+    .sushiContent {
+      .content {
+        .box {
+          .ul {
+            width: 100%;
+            overflow-x: scroll;
+            display: flex;
+            justify-content: flex-start;
+            margin-right: 18rpx * @mb;
+            &::-webkit-scrollbar {
+              display: none;
+            }
+            padding-top: 75rpx * @mb;
+
+            .liWarprer {
+              background: linear-gradient(180deg, #342b5b, #3d3253, #342b5b);
+              border: 0.5rpx * @mb solid #ffffff4d;
+              border-radius: 8rpx * @mb;
+              box-shadow: 0rpx 10rpx * @mb 40rpx * @mb #00000029;
+              &:nth-last-child(2) {
+                position: relative;
+                top: 0rpx * @mb;
+              }
+              .li {
+                width: 320rpx * @mb;
+                height: 327rpx * @mb;
+
+                align-items: center;
+                display: flex;
+                .img {
+                  left: 0;
+                  right: 0;
+                  width: 158rpx * @mb;
+                  height: 101rpx * @mb;
+                  margin-bottom: 70rpx * @mb;
+                  img {
+                    object-fit: contain;
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+                .title {
+                  font-family: "Omnes Italic Bold";
+                  margin-top: -45rpx * @mb;
+                  font-size: 18rpx * @mb;
+                  color: #fa6e42;
+                }
+                .desc {
+                  font-family: "Gen Jyuu Gothic Medium";
+                  color: white;
+                  font-size: 14rpx * @mb;
+                  margin-top: 10rpx * @mb;
+                  width: 256rpx * @mb;
+                  line-height: 20rpx * @mb;
+                }
+              }
+              .sushili {
+                width: 280rpx * @mb;
+                height: 226rpx * @mb;
+
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+
+                padding: 20rpx * @mb;
+                .imgsushi_0,
+                .imgsushi_1,
+                .imgsushi_2,
+                .imgsushi_3 {
+                  margin-top: -55rpx * @mb;
+                }
+                .imgsushi_4 {
+                  margin-top: -60rpx * @mb;
+                }
+                .imgsushi_5 {
+                  margin-top: -70rpx * @mb;
+                }
+                .imgsushi_6 {
+                  margin-top: -75rpx * @mb;
+                }
+                .imgsushi_7,
+                .imgsushi_8,
+                .imgsushi_9 {
+                  margin-top: -85rpx * @mb;
+                }
+
+                .sushiTitle {
+                  font-family: "Gen Jyuu Gothic Heavy";
+                  margin: 15rpx * @mb 0 35rpx * @mb 0;
+                  font-size: 18rpx * @mb;
+                  color: #fa6e42;
+                }
+                .table {
+                  width: 100%;
+                  .wrap {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10rpx * @mb 0;
+                    border-bottom: 1rpx * @mb solid #ffffff4d;
+                    &:nth-last-child(1) {
+                      border-bottom: none;
+                    }
+                    .left {
+                      font-family: "Gen Jyuu Gothic Bold";
+                      font-size: 14rpx * @mb;
+                      color: #fa6e42;
+                      line-height: 15rpx * @mb;
+                    }
+                    .right {
+                      color: white;
+                      font-size: 14rpx * @mb;
+                      font-family: "Gen Jyuu Gothic Bold";
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

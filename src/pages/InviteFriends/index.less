@@ -1,0 +1,264 @@
+.invite_friends {
+  width: 1182rpx;
+  .content {
+    width: 100%;
+
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .box {
+        width: 581rpx;
+        height: 233rpx;
+        background: #211d3b 0% 0% no-repeat padding-box;
+        box-shadow: 0rpx 10rpx 40rpx #00000029;
+        border-radius: 8rpx;
+        padding: 0 20rpx;
+        box-sizing: border-box;
+        .link_text {
+          color: #6c698d;
+          font-family: "Gen Jyuu Gothic Medium";
+          font-size: 18rpx;
+          margin-top: 15rpx;
+        }
+        .imgs {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 103rpx;
+          margin-top: 22rpx;
+
+          .img {
+            width: 54rpx;
+            height: 54rpx;
+            border-radius: 50%;
+            margin-right: 29rpx;
+            display: block;
+            &:last-child {
+              margin-right: 0rpx;
+            }
+          }
+        }
+        .main {
+          display: flex;
+          margin-top: 15rpx;
+
+          input {
+            width: 385rpx;
+            height: 42rpx;
+            background: #3e3e65 0% 0% no-repeat padding-box;
+            border: 1rpx solid #f5f5f5;
+            border-radius: 8rpx;
+            padding-left: 24rpx;
+            box-sizing: border-box;
+            margin-right: 10rpx;
+            font-family: "Gen Jyuu Gothic Medium";
+            font-size: 16rpx;
+            &::-webkit-input-placeholder {
+              color: #6c698d;
+            }
+          }
+          .button {
+            width: 146rpx;
+            height: 42rpx;
+          }
+        }
+      }
+      .box_right {
+        padding: 52rpx 43rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .num_text {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          box-sizing: border-box;
+          height: 51rpx;
+          align-items: center;
+          .left {
+            color: #6c698d;
+            font-family: "Gen Jyuu Gothic Bold";
+            font-size: 20rpx;
+          }
+          .right {
+            letter-spacing: 0.72rpx;
+            color: #f5f5f5;
+            font-family: "Gen Jyuu Gothic Bold";
+            font-size: 36rpx;
+          }
+        }
+      }
+    }
+    .body {
+      margin-top: 26rpx;
+      .title {
+        color: #f5f5f5;
+        font-family: "Gen Jyuu Gothic Bold";
+        font-size: 18rpx;
+        width: 233rpx;
+        height: 48rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("../../assets/common/btn_acount_selected_1@2x.webp")
+          no-repeat;
+        background-size: 100%;
+      }
+      .table {
+        width: 1182rpx;
+        height: 590rpx;
+        background: #211d3b 0% 0% no-repeat padding-box;
+        box-shadow: 0rpx 10rpx 40rpx #00000029;
+        border-radius: 0rpx 8rpx 8rpx 8rpx;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 53rpx;
+        padding-bottom: 16rpx;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .invite_friends {
+    width: 100%;
+    .content {
+      width: 100%;
+
+      .header {
+        width: 100%;
+        display: block;
+        padding: 0 16rpx * @mb;
+        box-sizing: border-box;
+        .box {
+          width: 100%;
+          height: auto;
+          background: none;
+          box-shadow: none;
+          border-radius: 0;
+          padding: 0;
+
+          // padding: 0 20rpx;
+          box-sizing: border-box;
+          .wrap {
+            background: #211d3b 0% 0% no-repeat padding-box;
+            box-shadow: 0rpx 10rpx * @mb 40rpx * @mb #00000029;
+            border-radius: 8rpx * @mb;
+            padding: 10rpx * @mb 12rpx * @mb;
+            box-sizing: border-box;
+            margin-top: 10rpx * @mb;
+          }
+          .link_text {
+            font-size: 12rpx * @mb;
+            margin-top: 0;
+          }
+          .main {
+            display: flex;
+            margin-top: 5rpx * @mb;
+
+            input {
+              width: 235rpx * @mb;
+              height: 32rpx * @mb;
+              border: none;
+              border-radius: 8rpx * @mb;
+              padding-left: 9rpx * @mb;
+              margin-right: 10rpx * @mb;
+              font-size: 12rpx * @mb;
+            }
+            .button {
+              width: 74rpx * @mb;
+              height: 32rpx * @mb;
+              font-size: 12rpx * @mb;
+            }
+          }
+          .imgs {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 33rpx * @mb;
+            margin-top: 12rpx * @mb;
+
+            .img {
+              width: 43rpx * @mb;
+              height: 43rpx * @mb;
+              border-radius: 50%;
+              margin-right: 27rpx * @mb;
+            }
+          }
+        }
+        .box_right {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          background: #211d3b 0% 0% no-repeat padding-box;
+          box-shadow: 0rpx 10rpx * @mb 40rpx * @mb #00000029;
+          border-radius: 8rpx * @mb;
+          padding: 19rpx * @mb 22rpx * @mb;
+          margin-top: 10rpx * @mb;
+          height: 94rpx * @mb;
+          box-sizing: border-box;
+
+          .num_text {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            box-sizing: border-box;
+            height: 51rpx;
+            align-items: center;
+            .left {
+              font-family: "Gen Jyuu Gothic Heavy";
+              font-size: 12rpx * @mb;
+            }
+            .right {
+              letter-spacing: 0.32rpx * @mb;
+              font-size: 16rpx * @mb;
+            }
+          }
+        }
+      }
+      .body {
+        background: #211d3b 0% 0% no-repeat padding-box;
+        box-shadow: 0rpx 10rpx * @mb 40rpx * @mb #00000029;
+        border-radius: 8rpx * @mb;
+        margin: 0 16rpx * @mb;
+        margin-top: 10rpx * @mb;
+        padding: 12rpx * @mb 11rpx * @mb;
+        box-sizing: border-box;
+        margin-bottom: 20rpx * @mb;
+
+        .title {
+          color: #f5f5f5;
+          font-size: 14rpx * @mb;
+          width: 100%;
+          height: auto;
+          display: block;
+          background: none;
+        }
+      }
+    }
+  }
+  .card_mobile {
+    width: 100%;
+    margin-top: 10rpx * @mb;
+    box-sizing: border-box;
+    padding: 10rpx * @mb;
+    background: #2b2847;
+  }
+  .card {
+    display: flex;
+    justify-content: space-between;
+    .name {
+      font-family: "Gen Jyuu Gothic Medium";
+      font-size: 14rpx * @mb;
+      color: #6c698d;
+      margin-top: 10rpx * @mb;
+    }
+    .value {
+      font-family: "Gen Jyuu Gothic Medium";
+      font-size: 14rpx * @mb;
+      color: #f5f5f5;
+      margin-top: 10rpx * @mb;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+<!-- <script type="text/javascript" src="https://comstage.playngonetwork.com/casino/js?gameid=35&amp;pid=565&amp;lang=ja_JP&amp;practice=0&amp;channel=desktop&amp;div=egamings_game_frame&amp;embedmode=iframe&amp;width=100%25&amp;height=100%25&amp"></script> -->
+
+<!-- <script type="text/javascript" src="https://comstage.playngonetwork.com/casino/js?gameid=35&amp;pid=565&amp;lang=ja_JP&amp;practice=0&amp;channel=desktop&amp;div=egamings_game_frame&amp;embedmode=iframe&amp;width=100%25&amp;height=100%25&amp;username=3481084-e2024e0678c4b726b0c2f42af248f84a"></script>
+<script type="text/javascript">
+(function () {     
+  window.addEventListener('message', function (x) {     
+    if (x && x.data && x.data.type == 'LOGOUT') {            
+      window.location.replace('');        
+      }    
+      }, true);})();
+      </script> -->
+      <div style="width: 100vw; height:100vh">
+      <div id="egamings_container">
+      <iframe></iframe>
+
+      </div>
+      </div>
+
+      <script>
+        window.onload=function(){
+          var obj = document.getElementById("egamings_container");
+          console.log(11111,obj.getElementsByTagName("iframe")[0])
+  // console.log(document.getElementById("egamings_container").getElementsTagName("iframe")[0])
+
+} 
+        function a () {
+
+        }
+      </script>
+
+  <!-- <div id="egamings_container"></div>
+  <script
+    type="text/javascript">(function () {
+        var request = new XMLHttpRequest();
+        var isIframe = false;
+        var origin = '';
+        try {
+          isIframe = window.self !== window.top;
+        }
+        catch (e) {
+          isIframe = true;
+        }
+        if (isIframe) {
+          try {
+            origin = window.top.origin;
+          } catch (e) { }
+        }
+        var ref = isIframe ? 
+        (origin !== '' ? origin : document.referrer.split('?')[0]) 
+        : 
+        document.location.origin; 
+        var checkurl = 'https://checktest1.globexdns.com/en/UserAuth/Booongo?token=9814abe3bd8b2575bd14c44412ba98be' + '&ref=' + encodeURI(ref); 
+        request.addEventListener('loadend', 
+        function () { 
+          if (request.status !== 200) { 
+            if (request.status === 403) { 
+              console.log('check result: ERROR (restricted)'); 
+            } else if (request.status === 404) { 
+              console.log('check result: ERROR (Empty token)'); 
+            } else { 
+              console.log('check result: ERROR CODE ' + request.status); 
+            } 
+            document.getElementById('egamings_container').outerHTML = ''; 
+            alert('Restricted'); 
+          } else { 
+            console.log('check result: OK'); 
+            var resp = JSON.parse(request.responseText); 
+            var ifr = document.createElement('iframe'); 
+            ifr.setAttribute('src', resp.data); 
+            ifr.setAttribute('width', '100%'); 
+            ifr.setAttribute('height', '100%'); 
+            ifr.setAttribute('frameBorder', 0); 
+            ifr.setAttribute('marginheight', 0); i
+            fr.setAttribute('marginwidth', 0); 
+            ifr.setAttribute('allowFullScreen', ''); 
+            document.getElementById('egamings_container').appendChild(ifr); 
+          } }); request.open('GET', checkurl); request.send();
+      })();</script> -->
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22">
+  <g id="RTP_icon" transform="translate(-24 -38)">
+    <path id="패스_608" data-name="패스 608" d="M44.5,60H24V39.5a1.5,1.5,0,0,1,3,0V57H44.5a1.5,1.5,0,0,1,0,3Z"  fill-rule="evenodd"/>
+    <path id="패스_609" data-name="패스 609" d="M32,51.5V54a1,1,0,0,1-1,1H30a1,1,0,0,1-1-1V51.9A25.053,25.053,0,0,0,32,51.5Zm6-2.074V53.5a1.5,1.5,0,0,1-3,0V50.669A24.687,24.687,0,0,0,38,49.424Zm6-4.13V54a1,1,0,0,1-1,1H42a1,1,0,0,1-1-1V47.714A25.042,25.042,0,0,0,44,45.294Z"  fill-rule="evenodd"/>
+    <path id="패스_610" data-name="패스 610" d="M25,50c-.382,0-.39-2,0-2a22.927,22.927,0,0,0,17.419-8H44v1.188A24.878,24.878,0,0,1,25,50Z"  fill-rule="evenodd"/>
+    <path id="패스_611" data-name="패스 611" d="M43,45a1,1,0,0,1-1-1V41H39a1,1,0,0,1,0-2h5v5A1,1,0,0,1,43,45Z" transform="translate(2 -1)"  fill-rule="evenodd"/>
+  </g>
+</svg>
